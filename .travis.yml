@@ -1,6 +1,10 @@
 language: node_js
 node_js: stable
 
+cache:
+    directories:
+        - node_modules
+
 before_install:
     - git clone https://github.com/zpike/hexo-theme-apollo.git themes/apollo
 
@@ -8,14 +12,11 @@ before_install:
 install:
   - npm install
 
-#before_script:
- # - npm install -g gulp
-
 script:
-  - hexo g
+  - hexo generate
 
 after_success:
-  - hexo d 
+  - hexo deploy
 
 branches:
   only:
