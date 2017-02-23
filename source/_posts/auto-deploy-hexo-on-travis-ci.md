@@ -137,11 +137,11 @@ env:
 
 如果出问题，基本都是配置文件的问题，yml文件的格式还是要求比较严格的，稍微不注意就不行。.travis.yml 文件的主要流程分三步，获取历史，生产静态文件，发布。
 
-*`before_script`: 在所有动作之前，先把 master 分支clone到`./public`文件夹，保留之前的 commit记录，把最新结果提交上去。
+* `before_script`: 在所有动作之前，先把 master 分支clone到`./public`文件夹，保留之前的 commit记录，把最新结果提交上去。
 
-*`script`: 就是 `hexo generate`的过程。
+* `script`: 就是 `hexo generate`的过程。
 
-*`after_success`: 在成功之后，成功都到了public文件夹下，然后就是照着`git push`到`master`分支下。
+* `after_success`: 在成功之后，成功都到了public文件夹下，然后就是照着`git push`到`master`分支下。
 
 当然还需要确认`travis build`都在 `blog-source`分支下工作。
 
