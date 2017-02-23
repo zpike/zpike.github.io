@@ -12,6 +12,9 @@ before_install:
 install:
   - npm install
 
+before_script:
+  - git clone --branch master https://github.com/zpike/zpike.github.io.git public
+
 script:
   - hexo cl
   - hexo g
