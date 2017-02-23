@@ -13,11 +13,21 @@ install:
   - npm install
 
 script:
-  - hexo generate
+  - hexo cl
+  - hexo g
 
-after_success:
-  - hexo deploy
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "zpike"
+  - git config user.email "conan401@126.com"
+  - git add .
+  - git commit -m "update"
+  - git push --force --quiet "https://${GH_token}@${GH_REF}" master:master
 
 branches:
   only:
     - blog-source
+env:
+    global:
+        - GH_REF: github.com/zpike/zpike.github.io.git 
