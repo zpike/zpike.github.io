@@ -8,7 +8,7 @@ tags: hexo travis
 
 ## 前言
 
-之前写过一个 Hexo 博客的搭建方法，搭建好之后我就没有怎么写博客了。一来是因为自己没什么好分享的（其实就是懒哈），二来是感觉静态技术博客这种形式已经落伍了，如果要学某种技术，还是直接找视频教程比较快。
+之前写过一个 [Hexo 博客的搭建方法][1]，搭建好之后我就没有怎么写博客了。一来是因为自己没什么好分享的（其实就是懒哈），二来是感觉静态技术博客这种形式已经落伍了，如果要学某种技术，还是直接找视频教程比较快。
 
 不过因为知道了“持续集成”，即 `Continuous integration`，这种技术已经很常见了，不过我最近才学习到。用在 hexo 博客的部署上比较合适，整个部署也比较简单，适合我这种小白。
 
@@ -78,32 +78,44 @@ tags: hexo travis
 在源代码分支（我这里即 blog-source 分支）下配置 `.travis.yml` 文件
 
 ```yml
-language: node_js  #设置语言
+language: node_js   #设置语言
+node_js: stable     #设置相应的版本
 
-node_js: stable  #设置相应的版本
+cache:
+    directories:
+        - node_modules    #据说可以减少travis构建时间
 
+before_install:
+    - git clone https://github.com/zpike/hexo-theme-apollo.git themes/apollo
+       #自己配置一个主题，也是乐趣之一，特效什么的，不过我还是偏好简洁（Next主题用的人真是多啊）
+
+# S: Build Lifecycle
 install:
-  - npm install  #安装hexo及插件
+  - npm install   #安装hexo及插件
+
+before_script:
+  - git clone --branch master https://github.com/zpike/zpike.github.io.git public
+        #获取最新的commit信息
 
 script:
-  - hexo cl  #清除
-  - hexo g  #生成
+  - hexo cl   #清除
+  - hexo g   #生成
 
 after_script:
   - cd ./public
   - git init
-  - git config user.name "yourname"  #修改name
-  - git config user.email "your email"  #修改email
+  - git config user.name "zpike"   #修改成自己的github用户名
+  - git config user.email "conan401@126.com"   #修改成自己的GitHub邮箱
   - git add .
   - git commit -m "update"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master  #GH_TOKEN是在Travis中配置token的名称
+  - git push --force --quiet "https://${GH_token}@${GH_REF}" master:master #GH_token就是在travis中设置的token
 
 branches:
   only:
-    - hexo  #只监测hexo分支，hexo是我的分支的名称，可根据自己情况设置
+    - blog-source  #只监测这个分支，一有动静就开始构建（我可能发一篇文章会push好多次，每次看到它忙着构建，感觉好浪费）。
 env:
- global:
-   - GH_REF: GitHub.com/yourname/yourname.GitHub.io.git  #设置GH_REF，注意更改yourname
+    global:
+        - GH_REF: github.com/zpike/zpike.github.io.git 
 ```
 
 
@@ -112,7 +124,7 @@ env:
 `.travis.yml` 配置完成，这个时候就可以push文章到你的 `blog-source` 分支上去了。然后其他工作都由 Travis-CI 来完成。
 
 
-登陆`Travis CI`，不出意外的话（我出了好多次意外，不过最终皇天不负有心人）Travis已经检测到变化并进行构建部署，log记录了构建的过程，出什么问题里面都可以点开来看。
+登陆`Travis CI`，不出意外的话（我出了好多次意外，不过最终皇天不负有心人！哈哈）Travis已经检测到变化并进行构建部署，log记录了构建的过程，出什么问题里面都可以点开来看。
 
 
 
@@ -121,23 +133,29 @@ env:
 
 
 
-* 配置文件
+#### 配置文件
 
 如果出问题，基本都是配置文件的问题，yml文件的格式还是要求比较严格的，稍微不注意就不行。.travis.yml 文件的主要流程分三步，获取历史，生产静态文件，发布。
 
-`before_script`: 在所有动作之前，先把 master 分支clone到`./public`文件夹，保留之前的 commit记录，把最新结果提交上去。
+*`before_script`: 在所有动作之前，先把 master 分支clone到`./public`文件夹，保留之前的 commit记录，把最新结果提交上去。
 
-`script`: 就是 `hexo generate`的过程。
+*`script`: 就是 `hexo generate`的过程。
 
-`after_success`: 在成功之后，成功都到了public文件夹下，然后就是照着`git push`到`master`分支下。
+*`after_success`: 在成功之后，成功都到了public文件夹下，然后就是照着`git push`到`master`分支下。
 
 当然还需要确认`travis build`都在 `blog-source`分支下工作。
 
 
 
-* 主题设置
+#### 主题设置
 
 网上很多hexo的主题，有的还在持续更新，这个就需要在配置文件中clone 一下，保持更新，或者在package.jason文件中配置一下也行吧（没试过），还是在travis配置文件中设置一下，方便换主题。设置在 `before_install` 后面。
+
+
+
+## 总结
+
+现在终于可以anywhere, anyplatform, anyeditor都可以开始写作了，还是很不错的。要做的就是打开editor，然后写完push即可，不用操心其它，多美好！
 
 
 ---
@@ -151,11 +169,17 @@ env:
 
 [使用 Travis CI 自動發布 hexo 到 GitHub pages][7]
 
+[基于 Hexo 的全自动博客构建部署系统][8]
+
+[用 Travis CI 自動部署網站到 GitHub(Hexo 作者写的)][9]
 
 
+  [1]: http://spikezz.com/2016/07/07/how-to-create-a-hexo-blog
   [2]: http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html
   [3]: https://docs.travis-ci.com/user/getting-started
   [4]: http://static.zybuluo.com/spikett/53whszhrw6l15onttf8d20ol/Snip20170223_2.png
   [5]: http://static.zybuluo.com/spikett/yp8xndh33eha7yxsdwxhcb99/Snip20170223_3.png
   [6]: http://www.jianshu.com/p/5e74046e7a0f
-  [7]: https://levirve.GitHub.io/2016/hexo-deploy-through-travisci/
+  [7]: https://levirve.GitHub.io/2016/hexo-deploy-through-travisci
+  [8]: http://kchen.cc/2016/11/12/hexo-instructions/
+  [9]: https://zespia.tw/blog/2015/01/21/continuous-deployment-to-github-with-travis/
