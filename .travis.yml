@@ -1,6 +1,9 @@
 language: node_js
 node_js: stable
 
+before_install:
+    - git clone https://github.com/zpike/hexo-theme-apollo.git themes/apollo
+
 # S: Build Lifecycle
 install:
   - npm install
