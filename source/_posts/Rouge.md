@@ -1,7 +1,8 @@
 ---
 title: 红
-date: {{ date }}
-tags:
+date: 2009-06-15T00:00:00.000Z
+tags: film
+published: true
 ---
 
 
