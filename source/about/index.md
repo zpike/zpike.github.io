@@ -1,12 +1,12 @@
 ---
-title: about
-layout: about   # 添加使用 about 模版
+title: 关于我
+layout: about 
 ---
 
 ## 关于我
 
-好人一个。
+一个好人。
 
 ## 友情链接
 
-- [Ahonn](http://www.ahonn.me)
+- [Freecodecamp](https://www.freecodecamp.com/)
