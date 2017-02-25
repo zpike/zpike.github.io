@@ -1,7 +1,8 @@
 ---
 title: 使用 Travis-CI 来自动化部署 Hexo
-date: 2017-02-23 18:45:43
+date: {}
 tags: hexo travis
+published: true
 ---
 
 
@@ -153,6 +154,15 @@ env:
 # 总结
 
 现在终于可以anywhere, anyplatform, anyeditor都可以开始写作了，还是很不错的。要做的就是打开editor，然后写完push即可，不用操心其它，多美好！
+
+
+[prose](prose.io)这个网站不错，很清爽，然后可以和**Github** 绑定，这样就可以直接在这上面写你的**Pages**博客了，写好直接save，搞定！。网页端暂时只有这个我比较满意。
+
+好的客户端还在寻找中，如果**Bear**或者**Ulysses**支持就好了，或者好像**Tower**是管理GitHub的利器，不行也可以那里写，只是不知道markdown支持如何。
+
+不过虽然可以直接写，但是很多**Hexo**的特性就用不到了，比如一些模版什么的，每次还要自己输入元数据，还是稍显麻烦。
+
+在工具的路径上是没有止境的，生命不息，折腾不止。
 
 
 ---
