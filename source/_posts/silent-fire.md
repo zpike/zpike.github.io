@@ -1,6 +1,6 @@
 ---
 title: 静默之火
-date: {{ date }}
+date: 2015-08-10 14:00:05
 tags: music
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 使用 Travis-CI 来自动化部署 Hexo
-date: {}
+date: 2017-02-20 14:00:00
 tags: hexo travis
 published: true
 ---

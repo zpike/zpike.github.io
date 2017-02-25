@@ -1,6 +1,6 @@
 ---
 title: 川藏游记
-date: 2013-08-19T00:00:00.000Z
+date: 2015-07-12 14:00:05
 tags: trip
 published: true
 ---
