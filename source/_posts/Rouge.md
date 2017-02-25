@@ -1,6 +1,3 @@
-
-
-
 ---
 title: 红
 date: {{ date }}
