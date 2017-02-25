@@ -1,7 +1,8 @@
 ---
 title: 蓝
-date: {{ date }}
+date: 2009-06-12T00:00:00.000Z
 tags: films
+published: true
 ---
 
 ![p1978401962.jpg-87.4kB][1]
