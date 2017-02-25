@@ -1,7 +1,8 @@
 ---
 title: 川藏游记
-date: {{ date }}
+date: 2013-08-19T00:00:00.000Z
 tags: trip
+published: true
 ---
 
 
