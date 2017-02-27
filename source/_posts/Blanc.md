@@ -5,7 +5,7 @@ tags: films
 published: true
 ---
 
-![p699040260.jpg-67.7kB][1]
+![mark](http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/115816652.jpg)
 
 
 三部电影，先看了这部。于是一直想这个“白”代表什么呢？难道基什么什么斯基只是为了这三部电影搞出的名堂？
@@ -39,7 +39,6 @@ published: true
 PS:电影里面有个老人将酒瓶放入垃圾箱的镜头，不知道有什么含义。在《蓝》里面也有。难道斯基想推广下这种垃圾箱？还有《蓝》里面的女主人公在里面也有个镜头，只是比较模糊，看的时候注意到了，只是没有确认。构思实在精巧，佩服！佩服！
 
 
-  [1]: http://static.zybuluo.com/spikett/9u4sar3uajefqz3hwn02kv88/p699040260.jpg
   [2]: http://static.zybuluo.com/spikett/kv8aut1ji6ebip5ijnpkaz4h/p2260590188.jpg
   [3]: http://static.zybuluo.com/spikett/gv4cfoe01spav5ljl5l8wgyn/p699040216.jpg
 
