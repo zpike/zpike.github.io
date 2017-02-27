@@ -5,7 +5,7 @@ tags: films
 published: true
 ---
 
-![p1978383213.jpg-392.4kB][1]
+![mark](http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/115342060.jpg)
 
 之前看过Juliette Binoche的《布拉格之恋》，由于是由书改编，很多东西都不大好理解，所以需要看书去研究。这部《蓝》应该算是一部伟大的电影，原因之一是表现“自由“的主题。
 
@@ -49,8 +49,6 @@ published: true
 
 《蓝》的伟大就体现在这里,希望，自由,宽容，思考。这一切在不知不觉中就完成了，我想好的艺术就应该这样。
 
-
-  [1]: http://static.zybuluo.com/spikett/hdaz7rx5iosdaco1uxhzgxm1/p1978383213.jpg
   [2]: http://static.zybuluo.com/spikett/fh9i9d0q9u7vi2m54hcd86l0/p1681698036.jpg
   [3]: http://static.zybuluo.com/spikett/w5fdaxl7zpgok1ugytp0fq88/p1681697377.jpg
 

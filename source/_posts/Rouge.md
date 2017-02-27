@@ -6,7 +6,7 @@ published: true
 ---
 
 
-![mark](http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/110021915.jpg)
+![mark](http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/115321238.jpg)
 
 最后看了这部红，是无意识的选择顺序，但是最终让我感到一种前瞻性，这个顺序很优化——《白》，《蓝》，《红》。
 
