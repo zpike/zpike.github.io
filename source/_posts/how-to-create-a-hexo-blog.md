@@ -4,6 +4,8 @@ date: 2016-07-07 16:07:16
 tags: hexo
 ---
 
+![mark](http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/112625978.png)
+
 
 很久以前看过阮一峰的介绍 `Jekyll` 做个人博客的文章，那时候还没用Mac，所以也没法尝试。现在用了Mac之后想起来了，不过写博客还是挺费力的，没啥干货也不好意思出来唠叨。尽量写点有趣又有科技含量的东西吧，逼着自己更新知识库还是不错的。
 
@@ -57,14 +59,13 @@ Hexo的配置都在`_config.yml`中，里面注释比较详细，不懂的查下
 deploy:
   type: git
   repo: git@github.com:name/name.github.io.git
-  #repo: https://github.com/name/name.github.io.git
   branch: master
   user: your_github_username
   email: your_email_address
 ```
 
 
-当然前提是你ssh密钥以及github或者coding上主页都弄好了，具体看下各个网站的详细说明，coding上比较容易，github比较pro，都过一遍流程就更熟悉了。
+当然前提是你ssh密钥以及github或者coding上主页都弄好了，具体看下各个网站的详细说明，coding上比较容易，github 稍复杂，跟着帮助文档过一遍流程就更熟悉了。
 
 
 ---
@@ -79,7 +80,15 @@ deploy:
 * [多说评论](http://duoshuo.com/)
 * [Hexo进阶](http://www.twalksong.com/2015/09/12/Hexo%E8%BF%9B%E9%98%B6/)
 
-还有图床可以用iPic，mac上面很好用。
+ps：还有图床可以用iPic，Mac 上面很好用，或者在 Windows 上面可以用MPic，配合七牛都是神器。直接复制图片，即可在md文件中粘贴。
+
+还有很多 markdown 中可以用到的插件，或者工具，会为你的文章添加更多色彩，这些我准备再多研究下，再写几篇文章。
+
+
+
+
+
+
 
 
 
