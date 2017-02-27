@@ -24,7 +24,7 @@ _Nick_又是一个梵高式的人，生前总是不得志，遭到市场的冷�
 在极度严重的抑郁症和强烈的孤独感之下他完成了他的第三张专辑「pink moon」，黑暗晦涩的风格，整张专辑散发着空洞苍白而又令人恐惧的美。这也是他最出色的一张专辑。
 
 
-![quote-if-songs-were-lines-in-a-conversation-the-situation-would-be-fine-nick-drake-107-37-36.jpg-61.4kB][2]
+![nd-quort.jpg-70.8kB][2]
 
 他的精神变得反复无常，生活更是一团遭。最后因服用过多的抗抑郁药物而死在自己的床上，生命最终定格在26岁。
 
@@ -39,7 +39,7 @@ _Nick_又是一个梵高式的人，生前总是不得志，遭到市场的冷�
 听_Nick Drake_的歌是孤单的，站在月亮上唱歌的孤单。失望造成的绝望，对生命的绝望，对社会的绝望，他能做的只有坐在空旷的房间独自弹着吉他，向自己的内心表达着一切。
 
  [1]: http://static.zybuluo.com/spikett/5za26isybxzfx35qnk8nsjbe/538d462423070.jpg
-   [2]: http://static.zybuluo.com/spikett/axi1ftu88efyw5tr9o8odg45/quote-if-songs-were-lines-in-a-conversation-the-situation-would-be-fine-nick-drake-107-37-36.jpg
+ [2]: http://static.zybuluo.com/spikett/7q3v1sn5hf31r7pguoqq0efr/nd-quort.jpg
    
 ---
 
