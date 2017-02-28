@@ -54,10 +54,10 @@ tags: Chrome
 `ReRes`，用来更改页面请求响应的内容。通过指定规则，您可以把请求映射到其他的url，也可以映射到本机的文件或者目录。
 
 
-
-
 `Vimium`，神器！值得学习一阵，熟悉vim的用这个会觉得很爽。 
+
 `Mosh`，据说比ssh更稳定。
+
 `JetBrains IDE Support`，用jetbrains网页端的软件开发，用这个插件来测试。
 
 `Disable HTML5 Autoplay`，有些网站自动播放视频很讨厌，比如facebook，这个插件解决这个问题。
@@ -73,7 +73,6 @@ tags: Chrome
 最后谈几个apps。
 
 `Telegram`，wechat太乱了，这里还挺清爽，有营养的谈话比较多一点。不过现在居然也要翻墙了。
-
 
 `feedly`，常用来看rss的，win上没有reedly还是用这个吧。
 
