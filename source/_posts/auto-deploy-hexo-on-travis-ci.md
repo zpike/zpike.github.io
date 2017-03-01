@@ -159,7 +159,7 @@ env:
 
 新手可能会比较麻烦。比如我。虽然我很早就用过git，不过很多指令学了忘，忘了学。其实最好的学习就是不断使用，如果几周不用，再好的工具也记不住。比如vim或者emacs。
 
-git新手建议看看廖雪峰的博客，还有**git-scm**，还有**git-tower**官网的很多教程，写得非常好，图文并茂，入门书籍的话应该无出其右了。
+git新手建议看看[廖雪峰的博客][11]，还有[**git-scm**][12]，还有[**git-tower**官网][13]的很多教程，写得非常好，图文并茂，入门书籍的话应该无出其右了。
 
 不过在写博客这方面，只需要记住几个常用的命令就行了。
 
@@ -221,3 +221,6 @@ git push origin blog-source  #push到远程
   [8]: http://kchen.cc/2016/11/12/hexo-instructions/
   [9]: https://zespia.tw/blog/2015/01/21/continuous-deployment-to-github-with-travis/
   [10]: http://prose.io
+  [11]: http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
+  [12]: https://git-scm.com/book/en/v2
+  [13]: https://www.git-tower.com/learn/git/ebook/en/desktop-gui/basics/basic-workflow#
