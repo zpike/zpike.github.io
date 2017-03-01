@@ -153,17 +153,44 @@ env:
 网上很多hexo的主题，有的还在持续更新，这个就需要在配置文件中clone 一下，保持更新，或者在package.jason文件中配置一下也行吧（没试过），还是在travis配置文件中设置一下，方便换主题。设置在 `before_install` 后面。
 
 
+#### git命令
 
-# 总结
+这套方案弄完之后，在任何电脑，只要有git，就可以写东西了。git指令如何操作呢？
 
-现在终于可以anywhere, anyplatform, anyeditor都可以开始写作了，还是很不错的。要做的就是打开editor，然后写完push即可，不用操心其它，多美好！
+新手可能会比较麻烦。比如我。虽然我很早就用过git，不过很多指令学了忘，忘了学。其实最好的学习就是不断使用，如果几周不用，再好的工具也记不住。比如vim或者emacs。
 
+git新手建议看看廖雪峰的博客，还有**git-scm**，还有**git-tower**官网的很多教程，写得非常好，图文并茂，入门书籍的话应该无出其右了。
+
+不过在写博客这方面，只需要记住几个常用的命令就行了。
+
+```
+git clone git@github.com:zpike/zpike.github.io.git  #先克隆
+git checkout origin/blog-source   #默认是master分支，然后切换分支
+git checkout -b blog-source   #本地新建一个博客源文件分支
+
+git add .   #写完博客添加文件
+git commit -m "xxx"  #加入commit信息
+git push origin blog-source  #push到远程
+```
+
+记住以上必用的命令当然不够，为了更方便操作，还是需要多多记住一些常用的git命令。
+
+如果在web上直接写文章的话，看下面。当然不建议这么做啦，不过如果身边没有设备的话，只有一只手机，那也没办法。灵感来了挡不住呀。
 
 [prose][10]这个网站不错，很清爽，然后可以和**Github** 绑定，这样就可以直接在这上面写你的**Pages**博客了，写好直接save，搞定！。网页端暂时只有这个我比较满意。
 
 好的客户端还在寻找中，如果**Bear**或者**Ulysses**支持就好了，或者好像**Tower**是管理GitHub的利器，不行也可以那里写，只是不知道markdown支持如何。
 
 不过虽然可以直接写，但是很多**Hexo**的特性就用不到了，比如一些模版什么的，每次还要自己输入元数据，还是稍显麻烦。
+
+
+
+# 总结
+
+现在终于可以anywhere, anyplatform, anyeditor都可以开始写作了，还是很不错的。要做的就是打开editor，然后写完push即可，不用操心其它，多美好！
+
+
+
 
 在工具的路径上是没有止境的，生命不息，折腾不止。
 
