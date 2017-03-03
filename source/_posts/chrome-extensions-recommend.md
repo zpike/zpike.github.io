@@ -4,8 +4,8 @@ date: 2016-08-12 14:00:05
 tags: Chrome
 ---
 
+![mark](http://oc1hnrd8p.bkt.clouddn.com/photos/20170303/092450509.png)
 
-![mark](http://oc1hnrd8p.bkt.clouddn.com/photos/20170228/090228036.jpg)
 
 自从科学上网之后，用`Chrome`的次数也明显增多。就目前来看，相对最好用的就它了，不过也分情况，如果只是简单上上网，又在 Mac 下，还是建议用 Safari，不然温度吓死人。不过最近升级之后没那么夸张了，Mac也不会太热。
 
