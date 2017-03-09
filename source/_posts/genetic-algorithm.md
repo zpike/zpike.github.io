@@ -1,8 +1,7 @@
 ---
 title: 遗传算法入门
-date: 2017-03-09 
+date: 2017-03-05 
 tags: algorithm
-published: true
 ---
 
 ![mark](http://oc1hnrd8p.bkt.clouddn.com/photos/20170309/113518553.jpg)
