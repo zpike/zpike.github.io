@@ -21,9 +21,8 @@ published: true
 `AJAX` 工作原理：
 
 
-<center>![head](![ajax.gif-9.1kB][1])</center>
 
-
+![mark](http://oc1hnrd8p.bkt.clouddn.com/photos/20170309/095503993.gif)
 
 
 `XMLHttpRequest` 是 `AJAX` 的基础。
@@ -153,7 +152,4 @@ loadXMLDoc() 函数创建 XMLHttpRequest 对象，添加当服务器响应就绪
 当服务器响应就绪时，会构建一个 HTML 表格，从 XML 文件中提取节点（元素），最后使用已经填充了 XML 数据的 HTML 表格来更新 txtCDInfo 占位符。
 
 
-
-
-  [1]: http://static.zybuluo.com/spikett/ev01i2s5lwd3cbceh9cop28c/ajax.gif
   [2]: http://www.runoob.com/try/demo_source/cd_catalog.xml
