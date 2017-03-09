@@ -38,8 +38,6 @@ tags: nas
 ## OpenMediaVault 的使用 
 
 
-
-
 配置只需要将移动硬盘挂在一下，在 web 界面下的 `File Systems` 中设置。
 
 
@@ -54,7 +52,7 @@ tags: nas
 
 最后就是使能 `SMB/CFIS` 分享功能，用过 ios上的 nplayer的应该比较熟悉。添加刚刚设置好的分享的文件夹，结束。
 
-然后就可以在 mac 中访问到树莓派了。其他设备访问也比较容易，手机上可以用 Solid Explorer 或者 ES文件浏览器。电视上应该也有ES浏览器可以安装。 ios设备推荐使用 nplayer，非常方便。
+然后就可以在电脑上访问到nas中的资料了。其他设备访问也比较容易，手机上可以用 `Solid Explorer` （需付费）或者 ES文件浏览器。电视上应该也有ES浏览器可以安装。 ios设备推荐使用 `nplayer`，非常方便。
 
 
 `参考文章：`
