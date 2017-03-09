@@ -5,7 +5,7 @@ tags: algorithm
 published: true
 ---
 
-![mark](http://oc1hnrd8p.bkt.clouddn.com/photos/20170309/092913145.jpg)
+![mark](http://oc1hnrd8p.bkt.clouddn.com/photos/20170309/113518553.jpg)
 
 遗传算法（Genetic Algorithm，简称GA）是一类借鉴生物界的进化规律（适者生存，优胜劣汰遗传机制）演化而来的随机化搜索方法，由美国的J.Holland教授1975年首先提出。遗传算法是一种模拟达尔文的遗传选择和自然淘汰的生物进化过程的计算模型，通过模拟自然进化过程搜索最优解，它常用来解决多约束条件下的最优问题。
 
@@ -154,6 +154,18 @@ do
 然后是**复制**。这个过程中优秀的染色体能获得更高的生产概率，从而在迭代过程中出现的次数更多。
 
 最后是**判断是否最优**。条件一般是：1.最佳个体在迭代中出现的次数；2.预先设定的算法迭代次数达到。
+
+`参考链接：`
+
+[GA算法介绍][13]
+[GA算法的JAVA实现][14]
+[在TSP(旅行最佳路线问题)问题上应用GA算法][15]
+[基因算法教程][16]
+
+[13]: https://www.doc.ic.ac.uk/~nd/surprise_96/journal/vol1/hmw/article1.html
+[14]: http://www.theprojectspot.com/tutorial-post/creating-a-genetic-algorithm-for-beginners/3
+[15]: http://www.theprojectspot.com/tutorial-post/applying-a-genetic-algorithm-to-the-travelling-salesman-problem/5
+[16]: http://www.w3ii.com/genetic_algorithms/default.html
 
 
 
