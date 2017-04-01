@@ -1,10 +1,6 @@
 language: node_js
 node_js: stable
 
-cache:
-    directories:
-        - node_modules
-
 before_install:
     - git clone https://github.com/zpike/hexo-theme-zz.git themes/zz
 
