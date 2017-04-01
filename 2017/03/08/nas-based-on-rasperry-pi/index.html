@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title>基于 Rasperry Pi 3 的家用 NAS 搭建 · SPIKE</title><meta name="description" content="基于 Rasperry Pi 3 的家用 NAS 搭建 - Spike Joe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/gandalfr.css"><link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/solarized-light.css"><link rel="search" type="application/opensearchdescription+xml" href="http://spikezz.com/atom.xml" title="SPIKE"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.ico" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/zpike" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="https://twitter.com/zshe404" target="_blank" class="nav-list-link">TWITTER</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">基于 Rasperry Pi 3 的家用 NAS 搭建</h1><div class="tags"><a href="/tags/nas/" class="tag-title">#nas</a></div><div class="post-info">Mar 8, 2017</div><div class="post-content"><p><img src="http://oc1hnrd8p.bkt.clouddn.com/photos/20170309/164143432.jpg" alt="mark"></p>
+<p>最近感觉对于 <code>NAS</code> 的需求越来越多了，主要是因为电子设备的增多，想要将所有媒体文件以及文档都放到一个地方统一管理，然后在世界任何地方可以方便存取，查阅。这样的场景想想就诱人。</p>
+<p>但是无奈群晖的 NAS 价格较高，个人用户还是比较难以承受的。不过很多其他方案可以实现，只是没有那么炫酷罢了。比如路由器自带的云存储，或者本篇文章要介绍的基于树莓派的家用 NAS 构建。</p>
+<a id="more"></a>
+<p>首先要用 <code>NAS</code> 当然要准备一个移动硬盘。目前可以选择的比较好的移动硬盘就那么几家，个人推荐WD的，或者希捷的，当然高富帅也可以选择Lacie，不过也就是样子货，还是简单实用就行了。</p>
+<p>说道移动硬盘，最近出了SSD的移动硬盘，那玩意儿短期之内价格不会让人满意的，而且作为 NAS太浪费了。还是用传统的就好，用最新的 Pi 3 速度已经够一般使用了。</p>
+<p>然后就是拿出你尘封已久的 <code>Rasperry Pi</code> 了，到<a href="https://sourceforge.net/projects/openmediavault/files/Raspberry%20Pi%20images/" target="_blank" rel="external">这个网站</a>下载镜像，然后就是安装系统了。关于镜像的选择，貌似网上很多，不过还是建议找最热门的，就是 <code>OpenMediaVault</code>，但是也有点问题，比如对名字中包含中文的文件的支持。总体上还是不错的，操作简单，方便。</p>
+<h2 id="OpenMediaVault-系统安装"><a href="#OpenMediaVault-系统安装" class="headerlink" title="OpenMediaVault 系统安装"></a>OpenMediaVault 系统安装</h2><p>安装比较简单，主要步骤如下：</p>
+<ul>
+<li>格式化树莓派的SD卡，格式化成FAT32格式；</li>
+<li>下载镜像文件，解压，镜像格式img；</li>
+<li>把精选写到SD卡上；</li>
+<li>树莓派放到路由器旁，插上一根网线，然后上电；</li>
+<li>等系统启动完毕，登录路由器界面，看到树莓派的ip地址，然后浏览器中输入ip地址，即可登录控制界面，默认登录用户名是：admin，密码：openmediavault。</li>
+</ul>
+<p>然后就可以开始配置移动硬盘了。</p>
+<h2 id="OpenMediaVault-的使用"><a href="#OpenMediaVault-的使用" class="headerlink" title="OpenMediaVault 的使用"></a>OpenMediaVault 的使用</h2><p>配置只需要将移动硬盘挂载一下，在 web 界面下的 <code>File Systems</code> 中设置。</p>
+<p>需要注意的是，每次配置好移动硬盘都需要 <code>Apply</code> 一下，其他操作也是如此。</p>
+<p>然后是配置一下要分享的文件夹，在左边的 <code>Shared Folders</code> 中设置，选择好要分享的硬盘，就是刚刚挂载的移动硬盘。</p>
+<p>要注意的是权限问题，管理挺麻烦的。自己家里用你就添加一个root帐号即可，所有权限都给。但是想要安全一点，还是需要多加限制。</p>
+<p>最后就是使能 <code>SMB/CFIS</code> 分享功能，用过 iOS上的 nPlayer 的应该比较熟悉。添加刚刚设置好的分享的文件夹，结束。</p>
+<p>然后就可以在电脑上访问到 NAS 中的资料了。其他设备访问也比较容易，手机上可以用 <code>Solid Explorer</code> （需付费）或者 <code>ES文件浏览器</code>。电视上应该也有ES浏览器可以安装。 ios设备推荐使用 <code>nPlayer</code>，非常方便。</p>
+<p><code>参考文章：</code></p>
+<p><a href="https://www.cnet.com/how-to/raspberry-pi-as-cheap-nas-solution/" target="_blank" rel="external">Turn any hard drive into networked storage with Raspberry Pi</a></p>
+<p><a href="http://www.songming.me/general-discussion.html" target="_blank" rel="external">Openmediavault入门常见问题及解决方法</a></p>
+</div></article></div></main><footer><div class="paginator"><a href="/2017/03/05/genetic-algorithm/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'spikezhou';
+var disqus_identifier = '2017/03/08/nas-based-on-rasperry-pi/';
+var disqus_title = '基于 Rasperry Pi 3 的家用 NAS 搭建';
+var disqus_url = 'http://spikezz.com/2017/03/08/nas-based-on-rasperry-pi/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//spikezhou.disqus.com/count.js" async></script><div class="copyright"><p>© 2015 - 2017 <a href="http://spikezz.com">Spike Joe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/MikeCoder/hexo-theme-gandalfr" target="_blank">hexo-theme-gandalfr</a>.</p></div></footer></div><script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" crossorigin="anonymous"></script><script src="//cdn.bootcss.com/jquery/3.1.1/jquery.js" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script><script>$(document).ready(function() { $('pre').each(function(i, block) { hljs.highlightBlock(block); }); });</script></body></html>

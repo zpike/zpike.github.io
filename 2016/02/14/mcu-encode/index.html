@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title>单片机加密 · SPIKE</title><meta name="description" content="单片机加密 - Spike Joe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/gandalfr.css"><link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/solarized-light.css"><link rel="search" type="application/opensearchdescription+xml" href="http://spikezz.com/atom.xml" title="SPIKE"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.ico" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/zpike" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="https://twitter.com/zshe404" target="_blank" class="nav-list-link">TWITTER</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">单片机加密</h1><div class="tags"><a href="/tags/mcu/" class="tag-title">#mcu</a></div><div class="post-info">Feb 14, 2016</div><div class="post-content"><p>首先对<code>S19</code>(freescale单片机执行文件)文件中关键代码进行PC1（对称加密算法），得到十六进制形式的txt文件。密钥定为16字节，基于速度和安全级别的考虑。了解算法之后可以改变字节数，但必须是2的次方。得到文件通过串口传输到单片机上，进行程序解密，编程，引导。</p>
+<a id="more"></a>
+<p>加密文件的特性：1，任意改变一位则解密不出原文；2，密钥可以半路变化。</p>
+<p>加密后的格式：<br><code>长度减一（明码）+ 编码地址（加密）+ 编程数据（加密）+ 全部数据的校验（明码）</code></p>
+<h2 id="对称加密算法总结："><a href="#对称加密算法总结：" class="headerlink" title="对称加密算法总结："></a>对称加密算法总结：</h2><p>优点：算法公开，计算量小，加密速度快，加密效率高。<br>缺点：安全性较弱，密钥管理负担大，缺乏签名功能。<br>具体算法：DES算法，3DES算法，TDEA算法，Blowfish算法，RC5算法，IDEA算法。（计算机专网系统中广泛使用DES和IDEA算法）</p>
+<h2 id="主流加密算法："><a href="#主流加密算法：" class="headerlink" title="主流加密算法："></a>主流加密算法：</h2><ul>
+<li><p>DES算法：64位明文块变为数据长度为64位密文输出块，其中8位为奇偶校验位，另外56位为密码长度。具有极高安全性，可靠加密方法。</p>
+</li>
+<li><p>RC算法：将一个256字节的初始数簇进行随机搅乱，得到一个子密钥，将密钥和明文进行异或运算，得到密文。RC4是目前最安全的加密算法之一。</p>
+</li>
+</ul>
+<h2 id="非对称加密算法："><a href="#非对称加密算法：" class="headerlink" title="非对称加密算法："></a>非对称加密算法：</h2><p>主要算法：RSA，Elgamal，背包算法，Rabin，D-H，ECC。使用广泛的是RSA算法。<br>RSA可以通过认证来防止中间人攻击。<br>原理：主机和客户端都生成一对密钥，公钥和私钥，分别用来加密和解密，主机用客户端的私钥加密信息发给客户端，客户端用自己的私钥解密，其他人无法解密。<br>非对称和对称算法之间的区别：密钥值的不同，非对称比对称慢千倍，但安全系数高。</p>
+<h2 id="单片机加密方法"><a href="#单片机加密方法" class="headerlink" title="单片机加密方法"></a>单片机加密方法</h2><ol>
+<li>烧断数据总线。有损坏的风险。</li>
+<li>芯片打磨改型，这个方法有一定作用，改了型号能误导，但同时也增加成本，解密者一般也能分析出来。</li>
+<li>用不合格的单片机的的存储器。很多单片机有这种情况，有的是小容量改为大容量来用，破解者应很难发现。使用时要测试可靠。</li>
+<li>其他还有添加外部硬件电路的加密方法。增加成本，效果不一定好。</li>
+<li>软件加密，是一些防止别人读懂程序的方法，单一的这种方法不能防止别人全盘复制。须配合其他的加密方法。</li>
+<li>通过序列号加密。在单片机中生成一个唯一的随机长序列号，并加入复杂的特种算法,或加入重新编码的企业信息在里面，每个芯片内不同，复制者只能复制到一个序列号。这个方法不能防止复制，但能发现复制品，并可在升级或在网络状态控制它或让他自毁。如果产品不联机或不可升级，则这个方法完全无效，只能是在上法院时可当作证据，因为内含特种算法破解者是无法知道的。</li>
+<li>通过单片机唯一的特性标识（不可修改）进行加密这个方法最好，能很好的防止复制。但大多单片机没有唯一标识。</li>
+</ol>
+<p>序列号加密实现方法:</p>
+<p><code>PC机 &lt;------------&gt; 带自定义算法序列号单片机系统</code><br>控制方法：</p>
+<ol>
+<li>PC根据传回来的序列号根据算法判断是否合法，合法就运行，不合法处理它。</li>
+<li>单片机内部的序列号经加密算法处理，单片机系统同样要防止软件被更改，可在单片机内部加入CRC等数据校验。</li>
+<li>序列号传送时可采用双向加密算法认证，相当于银卡的数据交换方式。</li>
+</ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>硬件加密与软件加密是分不开的,互相支撑,互相依存的。</li>
+<li>利用单片机未公开, 未被利用的标志位或单元,作为软件标志位。</li>
+<li>程序入口地址不要用整地址。</li>
+<li>在无程序的空单元也加上程序机器码 , 最好要加巧妙一点。</li>
+<li>用大容量芯片 , 用市场上仿真器不能仿真的芯片。</li>
+<li>关键数据存放在 EEPROM 中 , 或程序初始化时把密码写到 EEPROM 中 , - 程序执行时再查密码正确与否。</li>
+<li>把几种不同品种的单片机放在同一设备中。</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2016/02/19/mcu-powerup/" class="prev">PREV</a><a href="/2015/08/14/Rouge/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'spikezhou';
+var disqus_identifier = '2016/02/14/mcu-encode/';
+var disqus_title = '单片机加密';
+var disqus_url = 'http://spikezz.com/2016/02/14/mcu-encode/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//spikezhou.disqus.com/count.js" async></script><div class="copyright"><p>© 2015 - 2017 <a href="http://spikezz.com">Spike Joe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/MikeCoder/hexo-theme-gandalfr" target="_blank">hexo-theme-gandalfr</a>.</p></div></footer></div><script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" crossorigin="anonymous"></script><script src="//cdn.bootcss.com/jquery/3.1.1/jquery.js" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script><script>$(document).ready(function() { $('pre').each(function(i, block) { hljs.highlightBlock(block); }); });</script></body></html>

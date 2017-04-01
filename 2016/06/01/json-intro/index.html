@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title>JSON 文件入门 · SPIKE</title><meta name="description" content="JSON 文件入门 - Spike Joe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/gandalfr.css"><link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/solarized-light.css"><link rel="search" type="application/opensearchdescription+xml" href="http://spikezz.com/atom.xml" title="SPIKE"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.ico" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/zpike" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="https://twitter.com/zshe404" target="_blank" class="nav-list-link">TWITTER</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">JSON 文件入门</h1><div class="tags"><a href="/tags/json/" class="tag-title">#json</a></div><div class="post-info">Jun 1, 2016</div><div class="post-content"><p><img src="http://oc1hnrd8p.bkt.clouddn.com/photos/20170309/101842293.png" alt="mark"></p>
+<p>JSON: JavaScript Object Notation (JavaScript 对象表示法)</p>
+<p>JSON 是存储和交换文本信息的语法。类似 XML。<br>JSON 比 XML 更小、更快，更易解析。</p>
+<a id="more"></a>
+<p>JSON和XML的相同和不同之处：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">相同之处</th>
+<th style="text-align:center">不同之处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">纯文本</td>
+<td style="text-align:center">没有结束标签</td>
+</tr>
+<tr>
+<td style="text-align:center">具有”自我描述性”（人类可读）</td>
+<td style="text-align:center">更短</td>
+</tr>
+<tr>
+<td style="text-align:center">具有层级结构（值中存在值）</td>
+<td style="text-align:center">读写的速度更快</td>
+</tr>
+<tr>
+<td style="text-align:center">可通过 JavaScript 进行解析</td>
+<td style="text-align:center">能够使用内建的 JavaScript eval() 方法进行解析</td>
+</tr>
+<tr>
+<td style="text-align:center">数据可使用 AJAX 进行传输</td>
+<td style="text-align:center">使用数组</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">不使用保留字</td>
+</tr>
+</tbody>
+</table>
+<p>JSON 实例:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">&quot;employees&quot;: [</div><div class="line">&#123; &quot;firstName&quot;:&quot;John&quot; , &quot;lastName&quot;:&quot;Doe&quot; &#125;, </div><div class="line">&#123; &quot;firstName&quot;:&quot;Anna&quot; , &quot;lastName&quot;:&quot;Smith&quot; &#125;, </div><div class="line">&#123; &quot;firstName&quot;:&quot;Peter&quot; , &quot;lastName&quot;:&quot;Jones&quot; &#125;</div><div class="line">]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>在上面的实例中，对象 “employees” 是包含三个对象的数组。每个对象代表一条关于某人（有姓和名）的记录。</p>
+<p>JSON 独立于语言，JSON 使用 Javascript语法来描述数据对象，但是 JSON 仍然独立于语言和平台。JSON 解析器和 JSON 库支持许多不同的编程语言。 目前非常多的动态（PHP，JSP，.NET）编程语言都支持JSON。</p>
+<p>JSON 文本格式在语法上与创建 JavaScript 对象的代码相同。<br>由于这种相似性，无需解析器，JavaScript 程序能够使用内建的 <code>eval()</code> 函数，用 JSON 数据来生成 <strong>原生的</strong> JavaScript 对象。</p>
+<p><code>JSON 语法</code></p>
+<p>JSON 语法是 JavaScript 对象表示法语法的子集。<br><code>&quot;firstName&quot; : &quot;John&quot;</code></p>
+<p>等价于js中的<br><code>firstName = &quot;John&quot;</code></p>
+<p>JSON 最常见的用法之一，是从 web 服务器上读取 JSON 数据（作为文件或作为 HttpRequest），将 JSON 数据转换为 JavaScript 对象，然后在网页中使用该数据。</p>
+<p>实例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">&lt;title&gt;json教程&lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;h2&gt;从 JSON 字符串中创建对象&lt;/h2&gt;</div><div class="line"></div><div class="line">&lt;p&gt;</div><div class="line">名: &lt;span id=&quot;fname&quot;&gt;&lt;/span&gt;&lt;br&gt; </div><div class="line">姓: &lt;span id=&quot;lname&quot;&gt;&lt;/span&gt;&lt;br&gt; </div><div class="line">&lt;/p&gt; </div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line">var txt = &apos;&#123;&quot;employees&quot;:[&apos; +</div><div class="line">&apos;&#123;&quot;firstName&quot;:&quot;John&quot;,&quot;lastName&quot;:&quot;Doe&quot; &#125;,&apos; +</div><div class="line">&apos;&#123;&quot;firstName&quot;:&quot;Anna&quot;,&quot;lastName&quot;:&quot;Smith&quot; &#125;,&apos; +</div><div class="line">&apos;&#123;&quot;firstName&quot;:&quot;Peter&quot;,&quot;lastName&quot;:&quot;Jones&quot; &#125;]&#125;&apos;;</div><div class="line"></div><div class="line">var obj = eval (&quot;(&quot; + txt + &quot;)&quot;);</div><div class="line"></div><div class="line">document.getElementById(&quot;fname&quot;).innerHTML=obj.employees[1].firstName </div><div class="line">document.getElementById(&quot;lname&quot;).innerHTML=obj.employees[1].lastName </div><div class="line">&lt;/script&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<p>使用 JSON 解析器将 JSON 转换为 JavaScript 对象是更安全的做法。JSON 解析器只能识别 JSON 文本，而不会编译脚本。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Create Object from JSON String<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line">First Name: <span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"fname"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span> </div><div class="line">Last Name: <span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"lname"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span> </div><div class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span> </div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">var txt = '&#123;"employees":[' +</div><div class="line">'&#123;"firstName":"John","lastName":"Doe" &#125;,' +</div><div class="line">'&#123;"firstName":"Anna","lastName":"Smith" &#125;,' +</div><div class="line">'&#123;"firstName":"Peter","lastName":"Jones" &#125;]&#125;';</div><div class="line"></div><div class="line">obj = JSON.parse(txt); //使用json解析器</div><div class="line"></div><div class="line">document.getElementById("fname").innerHTML=obj.employees[1].firstName </div><div class="line">document.getElementById("lname").innerHTML=obj.employees[1].lastName </div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>在浏览器中，提供了原生的 JSON 支持，而且 JSON 解析器的速度更快。</p>
+<p><code>JSONP</code></p>
+<p>Jsonp (JSON with Padding) 是 JSON 的一种”使用模式”，可以让网页从别的域名那获取资料，即跨域读取数据。这里有兴趣可以去看一下浏览器的“<a href="http://www.jianshu.com/p/4e17445d66e2" target="_blank" rel="external">同源策略</a>”，就知道JSONP的意义了。</p>
+<p>JSONP易于实现，但是也会存在一些安全隐患，如果第三方的脚本随意地执行，那么它就可以篡改页面内容，截获敏感数据。但是在受信任的双方传递数据，JSONP是非常合适的选择。</p>
+<p>JSONP 实例：</p>
+<p>假设客户端想要访问：<a href="http://www.runoob.com/try/ajax/jsonp.php?jsonp=callbackFunction" target="_blank" rel="external">链接数据</a>。</p>
+<p>期望返回JSON数据：[“customername1”,”customername2”]。</p>
+<p>服务端文件jsonp.php代码为：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line">header(<span class="string">'Content-type: application/json'</span>);</div><div class="line"><span class="comment">//获取回调函数名</span></div><div class="line">$jsoncallback = htmlspecialchars($_REQUEST [<span class="string">'jsoncallback'</span>]);</div><div class="line"><span class="comment">//json数据</span></div><div class="line">$json_data = <span class="string">'["customername1","customername2"]'</span>;</div><div class="line"><span class="comment">//输出jsonp格式的数据</span></div><div class="line"><span class="keyword">echo</span> $jsoncallback <span class="meta">&lt;?php</span></div><div class="line">header(<span class="string">'Content-type: application/json'</span>);</div><div class="line"><span class="comment">//获取回调函数名</span></div><div class="line">$jsoncallback = htmlspecialchars($_REQUEST [<span class="string">'jsoncallback'</span>]);</div><div class="line"><span class="comment">//json数据</span></div><div class="line">$json_data = <span class="string">'["customername1","customername2"]'</span>;</div><div class="line"><span class="comment">//输出jsonp格式的数据</span></div><div class="line"><span class="keyword">echo</span> $jsoncallback . <span class="string">"("</span> . $json_data . <span class="string">")"</span>;</div><div class="line"><span class="meta">?&gt;</span>. <span class="string">"("</span> . $json_data . <span class="string">")"</span>;</div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
+<p>客户端使用jQuery并使用JSONP访问客户端数据代码如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>JSONP usage<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://apps.bdimg.com/libs/jquery/1.8.3/jquery.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>	</div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"divCustomers"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">$.getJSON("http://www.runoob.com/try/ajax/jsonp.php?jsoncallback=?", function(data) &#123;</div><div class="line">	</div><div class="line">	var html = '&lt;ul&gt;';</div><div class="line">	for(var i = 0; i &lt; data.length; i++)</div><div class="line">	&#123;</div><div class="line">		html += '&lt;li&gt;' + data[i] + '&lt;/li&gt;';</div><div class="line">	&#125;</div><div class="line">	html += '&lt;/ul&gt;';</div><div class="line">	</div><div class="line">	$('#divCustomers').html(html); </div><div class="line">&#125;);</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>以上实例是利用getJSON来实现的，地址参数中添加”callback=?”即可。</p>
+<p>还可以用ajax函数中实现，比如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$.ajax(&#123;</div><div class="line">    datatype: &quot;jsonp&quot;,</div><div class="line">    url: ,</div><div class="line">    succes: function(data)&#123;</div><div class="line">    //处理data数据</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p><code>PHP JSON</code></p>
+<p>下面介绍PHP 语言来编码和解码 JSON 对象。</p>
+<p>在 php5.2.0 及以上版本已经内置 JSON 扩展。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">函数</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">json_encode</td>
+<td style="text-align:center">对变量进行json编码</td>
+</tr>
+<tr>
+<td style="text-align:center">json_decode</td>
+<td style="text-align:center">对json格式的字符串进行解码，转换成php变量</td>
+</tr>
+<tr>
+<td style="text-align:center">json_last_error</td>
+<td style="text-align:center">返回最后发生的错误</td>
+</tr>
+</tbody>
+</table>
+<p>将 PHP 数组转换为 JSON 格式数据：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">   $arr = array(&apos;a&apos; =&gt; 1, &apos;b&apos; =&gt; 2, &apos;c&apos; =&gt; 3, &apos;d&apos; =&gt; 4, &apos;e&apos; =&gt; 5);</div><div class="line">   echo json_encode($arr);</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
+<p>执行结果为：</p>
+<p><code>{&quot;a&quot;:1,&quot;b&quot;:2,&quot;c&quot;:3,&quot;d&quot;:4,&quot;e&quot;:5}</code></p>
+<p>将 PHP 对象转换为 JSON 格式数据：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line">   <span class="class"><span class="keyword">class</span> <span class="title">Emp</span> </span>&#123;</div><div class="line">       <span class="keyword">public</span> $name = <span class="string">""</span>;</div><div class="line">       <span class="keyword">public</span> $hobbies  = <span class="string">""</span>;</div><div class="line">       <span class="keyword">public</span> $birthdate = <span class="string">""</span>;</div><div class="line">   &#125;</div><div class="line">   $e = <span class="keyword">new</span> Emp();</div><div class="line">   $e-&gt;name = <span class="string">"sachin"</span>;</div><div class="line">   $e-&gt;hobbies  = <span class="string">"sports"</span>;</div><div class="line">   $e-&gt;birthdate = date(<span class="string">'m/d/Y h:i:s a'</span>, strtotime(<span class="string">"8/5/1974 12:20:03"</span>));</div><div class="line"></div><div class="line">   <span class="keyword">echo</span> json_encode($e);</div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
+<p>PHP json_decode() 函数用于对 JSON 格式的字符串进行解码，并转换为 PHP 变量。代码如下：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line">   $json = <span class="string">'&#123;"a":1,"b":2,"c":3,"d":4,"e":5&#125;'</span>;</div><div class="line"></div><div class="line">   var_dump(json_decode($json));  <span class="comment">//返回对象</span></div><div class="line">   var_dump(json_decode($json, <span class="keyword">true</span>));  <span class="comment">//返回数组</span></div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
+<hr>
+</div></article></div></main><footer><div class="paginator"><a href="/2016/07/07/how-to-create-a-hexo-blog/" class="prev">PREV</a><a href="/2016/05/05/jquery-intro/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'spikezhou';
+var disqus_identifier = '2016/06/01/json-intro/';
+var disqus_title = 'JSON 文件入门';
+var disqus_url = 'http://spikezz.com/2016/06/01/json-intro/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//spikezhou.disqus.com/count.js" async></script><div class="copyright"><p>© 2015 - 2017 <a href="http://spikezz.com">Spike Joe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/MikeCoder/hexo-theme-gandalfr" target="_blank">hexo-theme-gandalfr</a>.</p></div></footer></div><script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" crossorigin="anonymous"></script><script src="//cdn.bootcss.com/jquery/3.1.1/jquery.js" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script><script>$(document).ready(function() { $('pre').each(function(i, block) { hljs.highlightBlock(block); }); });</script></body></html>
