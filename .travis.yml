@@ -6,7 +6,7 @@ cache:
         - node_modules
 
 before_install:
-    - git clone https://github.com/zpike/hexo-theme-apollo.git themes/apollo
+    - git clone https://github.com/zpike/hexo-theme-zz.git themes/zz
 
 # S: Build Lifecycle
 install:
