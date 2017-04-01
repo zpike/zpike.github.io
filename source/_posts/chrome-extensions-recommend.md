@@ -68,7 +68,8 @@ tags: Chrome
 
 `Magic Actions for YouTube`，神器。基本你看youtube视频所有的要求它都有了。
 
-`Photo Zoom for Facebook`，可以自动大图facebook。不过感觉facebook热度过了，最近很少登录了，网站感觉垃圾了。
+`Photo Zoom for Facebook`，可以自动大图facebook。不过感觉facebook热度过了，最近很少登录了，网站感觉垃圾了，没什么可看的。
+
 
 最后谈几个apps。
 
@@ -77,6 +78,8 @@ tags: Chrome
 `feedly`，常用来看rss的，win上没有reedly还是用这个吧。
 
 `draw.io Diagrams`，这个用来画画流程图，还是蛮方便的。
+
+'Free Rider HD'，这是个小游戏，感觉做得还挺有趣。
 
 
 
