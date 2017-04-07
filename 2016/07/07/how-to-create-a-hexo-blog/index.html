@@ -1,27 +1,29 @@
 <!DOCTYPE html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Hexo 搭建笔记 · SPIKE</title><meta name="description" content="Hexo 搭建笔记 - Spike Joe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://spikezz.com/atom.xml" title="SPIKE"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/zpike" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="https://twitter.com/zshe404" target="_blank" class="nav-list-link">TWITTER</a></li><li class="nav-list-item"><a href="/about" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Hexo 搭建笔记</h1><div class="post-info">Jul 7, 2016</div><div class="post-content"><p><img src="http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/112625978.png" alt="mark"></p>
-<p>很久以前看过阮一峰的介绍 <code>Jekyll</code> 做个人博客的文章，那时候还没用Mac，所以也没法尝试。现在用了Mac之后想起来了，不过写博客还是挺费力的，没啥干货也不好意思出来唠叨。尽量写点有趣又有科技含量的东西吧，逼着自己更新知识库还是不错的。</p>
+<p>很久以前看过阮一峰的介绍 Jekyll 做个人博客的文章，那时候还没用 Mac，所以也没法尝试。现在用了Mac之后想起来了，不过写博客还是挺费力的，没啥干货也不好意思出来唠叨。尽量写点有趣又有科技含量的东西吧，逼着自己更新知识库还是不错的。</p>
 <p>Jekyll的官网虽然做得不错，但是流程我还没看明白，比Hexo的说明要复杂。所以下面就从弄Hexo博客开始吧。</p>
 <a id="more"></a>
-<p>这几天折腾了一个Hexo博客，并且部署到github和coding，而且租了个服务器，弄个了个人域名，过程中几个小问题搜了很多文章，但是也没能解决我的问题，还是挺费劲的。第一篇文章就用来记录这个过程我遇到的问题吧。</p>
-<p>网上信息比较多，很多过期的文章，软件版本更新之后就不大能用了，或者Win下Mac下的区别较多，给新手会造成不必要的误解。</p>
-<p>官网可以查到的东西我就不再写了，毕竟没有必要重新造轮子。</p>
+<p>这几天折腾了一个Hexo博客，并且部署到GitHub和Coding，而且租了个服务器，弄个了个人域名，过程中几个小问题搜了很多文章，但是也没能解决我的问题，还是挺费劲的。第一篇文章就用来记录这个过程我遇到的问题吧。</p>
+<p>网上信息比较多，很多过期的文章，软件版本更新之后就不大能用了，PC和Mac下的区别较多，给新手会造成不必要的误解。</p>
+<p>官网可以查到的东西我就不再写了，下面多写写自己这个过程中遇到的一些问题。</p>
 <hr>
-<p>Hexo是一个台湾人弄的，在twitter上面我关注了下，头像还挺萌。希望可以一直更新吧，毕竟用起来整体感觉还不错，轻快简单。很多人推荐使用NexT主题，搜了一下发现好多人用这个主题，瞬间感觉没啥特点了。所以要想独特一点，有个性一点还是自己找个冷门点的主题改改，或者自己弄个主题，过程也不大复杂，专注于写作就行，主题基本功能都有就行。</p>
-<p>Hexo安装依赖于node.js，npm安装比较不稳定，开个VPN比较好一点。</p>
-<p>Hexo官网上面的文档挺全的，需要补充的就是主题的设置，还有网站的第三方服务的设置。</p>
+<p>Hexo是一个台湾人弄的，不知道靠不靠谱，希望可以一直更新吧，毕竟用起来整体感觉还不错，轻快简单。</p>
+<p>很多人推荐使用NexT主题，搜了一下发现好多人用这个主题，瞬间感觉没啥特点了。所以要想独特一点，有个性一点还是自己找个冷门点的主题改改，或者自己弄个主题，只要专注于写作就行。</p>
+<p>安装过程比较简单，不说了。Hexo安装依赖于node.js，npm安装比较不稳定，开个VPN比较好一点。Hexo官网上面的文档挺全的，需要补充的就是主题的设置，还有网站的第三方服务的设置。</p>
 <hr>
 <p>Hexo的配置都在<code>_config.yml</code>中，里面注释比较详细，不懂的查下官网，一般都知道怎么设置。需要注意的是文件类型是yml，语法要求比较严格，开头冒号后面必须空一格，不然不能识别。语法支持好的比如vim或者sublime，弄个插件，一般都能很好支持yml语法。还有这个文件要和主题目录下的同名文件相互区别，不要弄混淆了。</p>
 <p>具体设置，比如language，中文简体的代码是<code>zh-hans</code>，其他设置试一下就知道了，一般默认就ok了。头像，logo什么的，弄个url比较好，或者放到Hexo的source目录下，这样<code>Hexo g</code> 的时候才能不丢失。</p>
-<p>配置测试ok了，然后就可以写blog了。<code>Hexo new</code> 加文件名即可。这样就在source文件夹下新建了一个文件，写好标签和分类，就可以写正文了。网上有教你Hexo new之后直接打开编辑器的教程，这样就更方便了。直接在sublime中或者其他编辑器中写文章。需要注意的是Win下目录设置的问题。类似这样<code>D:\\Program Files\\Sublime Text 3\\...</code>。</p>
-<p>这里推荐使用cmd markdown在线写文章，然后导出md格式，再稍微修改即可发布了。sublime的markdown还是不大易用和方便。</p>
-<p>写文章不满意，当然也可以删掉，但是Hexo没有提供删除文章的命令，所以手动删掉也行，不过我测试了一下，在删光文章的时候Hexo g会出错，一定要Hexo new一篇文章才能进行Hexo g。</p>
-<p>再然后就是配置主题什么的了。建议看看NexT主题的官网，里面有详细的教程，非常实用，很多官网没看明白的东西可以在那边看看。比如字体，图标，第三方服务什么的。</p>
+<p>配置测试ok了，然后就可以写blog了。<code>Hexo new</code> 加文件名即可。这样就在source文件夹下新建了一个文件，写好标签和分类，就可以写正文了。网上有教你Hexo new之后直接打开编辑器的教程，这样就更方便了。直接在sublime中或者其他编辑器中写文章。需要注意的是Win下目录设置的问题。类似这样<code>D:\\Program Files\\Sublime Text 3\\...</code>。Mac中的话就比如这样<code>&quot;/Applications/Sublime\ Text.app&quot;</code>，注意空格之前要加一个反斜杠。（不过Sublime并不大适合写文章，MWeb据说不错可以试试）</p>
+<p>其实还可以使用Cmd Markdown在线写文章，然后导出markdown格式，再稍微修改即可发布了。不过过程稍微麻烦了点。喜欢移动写作的人，估计会比较喜欢。不过最近我将hexo固定到air上来写，所有其他电脑上的文件都删除了。这样还是更适合我一点。（当然在这之前，你还是可以尽量折腾，比如自动构建什么的）</p>
+<p>写文章不满意，当然也可以删掉，但是Hexo没有提供删除文章的命令，所以手动删掉也行，不过我测试了一下，在删光文章的时候Hexo g会出错，一定要hexo new一篇文章才能进行Hexo g。</p>
+<p>再然后就是配置主题什么的了。建议看看NexT主题的官网，里面有详细的教程，非常实用，很多官网没看明白的东西可以在那边看看。比如字体，图标，第三方服务什么的。主题其实也是个大坑，最近就不研究了。专注写作比较好。当然第三方服务可以看看，毕竟要用到不少，比如评论系统，</p>
 <hr>
-<p>最后写好文章就可以部署到pages上去了。github或者coding都不错，国内建议用coding，速度很快。不过很多人遇到Hexo d的时候不成功的问题，我也被这个问题折磨了很久，网上很多回答都没有解决我的问题。</p>
-<p>其实直接将public中的生成文件push到pages就行了，只是这样不优雅，比较费劲。所以还是希望一条命令（<code>Hexo g -d</code>）解决部署，这样才够爽。</p>
-<p>首先想要部署到github需要安装一个插件，<code>Hexo-deployer-git</code>，这个插件里面的文档作用比各种网上的文件要有用太多，建议看看。最终解决我的Hexo d的问题就是看了那个文档。因为我是Win下Git bash环境，所以Hexo d会出现问题，配置文件中需要这样写：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Deployment</span></div><div class="line"><span class="comment">## Docs: https://Hexo.io/docs/deployment.html</span></div><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:name/name.github.io.git</span></div><div class="line"><span class="attr">  branch:</span> <span class="string">master</span></div><div class="line"><span class="attr">  user:</span> <span class="string">your_github_username</span></div><div class="line"><span class="attr">  email:</span> <span class="string">your_email_address</span></div></pre></td></tr></table></figure>
-<p>当然前提是你ssh密钥以及github或者coding上主页都弄好了，具体看下各个网站的详细说明，coding上比较容易，github 稍复杂，跟着帮助文档过一遍流程就更熟悉了。</p>
+<p>最后写好文章就可以推送到 github pages 上去了。GitHub或者Coding都不错，国内建议用Coding，速度很快。不过很多人遇到Hexo d的时候不成功的问题，我也被这个问题折磨了很久，网上很多回答都没有解决我的问题。</p>
+<p>其实直接将public中的生成文件push到pages就行了，只是这样不够优雅。所以还是希望一条命令（<code>Hexo g -d</code>）解决部署，在Mac问题较少，Win用户貌似要多写点配置内容，不过基本用我下面写的配置内容一定可以成功的。</p>
+<p>首先想要部署到GitHub需要安装一个插件，<code>Hexo-deployer-git</code>，这个插件里面的文档作用比各种网上的文件要有用太多，建议看看。最终解决我的Hexo d的问题就是看了那个文档。因为我是Win下Git bash环境，所以Hexo d会出现问题，配置文件中需要这样写：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Deployment</span></div><div class="line"><span class="comment">## Docs: https://Hexo.io/docs/deployment.html</span></div><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repo:</span> <span class="string">git@GitHub.com:name/name.GitHub.io.git</span></div><div class="line"><span class="attr">  branch:</span> <span class="string">master</span></div><div class="line"><span class="attr">  user:</span> <span class="string">your_GitHub_username</span></div><div class="line"><span class="attr">  email:</span> <span class="string">your_email_address</span></div></pre></td></tr></table></figure>
+<p>当然前提是你ssh密钥以及GitHub或者Coding上主页都弄好了，具体看下各个网站的详细说明，Coding上比较容易，GitHub 稍复杂，跟着帮助文档过一遍流程就更熟悉了。</p>
+<p>还有hexo g的时候可能会出现一些常见的问题，比如什么DTraceProviderBingds之类的，貌似是npm的问题，我之前遇到过，不过瞎弄了几次，居然莫名其妙就好了，暂时不知道为啥。</p>
+<p>国内的duoshuo不行了，只能换到disqus上去了，不过我的博客总是加载不了disqus的服务，不知道为什么。索性就不用评论系统了，但是会保持的更新的。继续完善每个主题的文章。</p>
 <hr>
 <p>最后列一下这个过程中用到的网站，方便查询。</p>
 <ul>

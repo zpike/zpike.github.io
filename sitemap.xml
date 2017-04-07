@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://spikezz.com/2016/07/07/how-to-create-a-hexo-blog/</loc>
+    
+    <lastmod>2017-04-07T08:26:40.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://spikezz.com/2016/08/12/chrome-extensions-recommend/</loc>
     
     <lastmod>2017-04-01T00:50:50.000Z</lastmod>
@@ -30,14 +37,7 @@
   </url>
   
   <url>
-    <loc>http://spikezz.com/2016/07/07/how-to-create-a-hexo-blog/</loc>
-    
-    <lastmod>2017-03-10T02:05:36.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://spikezz.com/2015/08/12/Blanc/</loc>
+    <loc>http://spikezz.com/2016/02/19/mcu-powerup/</loc>
     
     <lastmod>2017-03-10T02:05:36.000Z</lastmod>
     
@@ -51,14 +51,14 @@
   </url>
   
   <url>
-    <loc>http://spikezz.com/2016/02/19/mcu-powerup/</loc>
+    <loc>http://spikezz.com/2015/08/14/Rouge/</loc>
     
     <lastmod>2017-03-10T02:05:36.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://spikezz.com/2015/08/14/Rouge/</loc>
+    <loc>http://spikezz.com/2015/08/12/Blanc/</loc>
     
     <lastmod>2017-03-10T02:05:36.000Z</lastmod>
     
