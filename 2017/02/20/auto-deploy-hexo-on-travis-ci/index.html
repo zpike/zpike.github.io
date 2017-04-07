@@ -8,22 +8,20 @@
   <link rel="dns-prefetch" href="http://spikezz.com">
   <title>使用 Travis-CI 来自动化部署 Hexo | SPIKE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="之前写过一个 Hexo 博客的搭建方法，搭建好之后我就没有怎么写博客了。一来是因为自己没什么好分享的（其实就是懒哈），二来是感觉静态技术博客这种形式已经落伍了，如果要学某种技术，还是直接找视频教程比较快。
-不过因为知道了“持续集成”，即 Continuous integration，这种技术已经很常见了，不过我最近才学习到。用在 hexo 博客的部署上比较合适，整个部署也比较简单，适合我这种小白">
+  <meta name="description" content="之前写过一个 Hexo 博客的搭建方法，搭建好之后我就没有怎么写博客了。一来是因为自己没什么好分享的（其实就是懒哈），二来是感觉静态技术博客这种形式已经落伍了，如果要学某种技术，还是直接找视频教程比较快。 不过因为知道了“持续集成”，即 Continuous integration，这种技术已经很常见了，不过我最近才学习到。用在 hexo 博客的部署上比较合适，整个部署也比较简单，适合我这种小白">
+<meta name="keywords" content="hexo travis">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用 Travis-CI 来自动化部署 Hexo">
 <meta property="og:url" content="http://spikezz.com/2017/02/20/auto-deploy-hexo-on-travis-ci/index.html">
 <meta property="og:site_name" content="SPIKE">
-<meta property="og:description" content="之前写过一个 Hexo 博客的搭建方法，搭建好之后我就没有怎么写博客了。一来是因为自己没什么好分享的（其实就是懒哈），二来是感觉静态技术博客这种形式已经落伍了，如果要学某种技术，还是直接找视频教程比较快。
-不过因为知道了“持续集成”，即 Continuous integration，这种技术已经很常见了，不过我最近才学习到。用在 hexo 博客的部署上比较合适，整个部署也比较简单，适合我这种小白">
+<meta property="og:description" content="之前写过一个 Hexo 博客的搭建方法，搭建好之后我就没有怎么写博客了。一来是因为自己没什么好分享的（其实就是懒哈），二来是感觉静态技术博客这种形式已经落伍了，如果要学某种技术，还是直接找视频教程比较快。 不过因为知道了“持续集成”，即 Continuous integration，这种技术已经很常见了，不过我最近才学习到。用在 hexo 博客的部署上比较合适，整个部署也比较简单，适合我这种小白">
 <meta property="og:image" content="http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/111351727.jpg">
 <meta property="og:image" content="http://static.zybuluo.com/spikett/53whszhrw6l15onttf8d20ol/Snip20170223_2.png">
 <meta property="og:image" content="http://static.zybuluo.com/spikett/yp8xndh33eha7yxsdwxhcb99/Snip20170223_3.png">
 <meta property="og:updated_time" content="2017-03-10T02:10:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用 Travis-CI 来自动化部署 Hexo">
-<meta name="twitter:description" content="之前写过一个 Hexo 博客的搭建方法，搭建好之后我就没有怎么写博客了。一来是因为自己没什么好分享的（其实就是懒哈），二来是感觉静态技术博客这种形式已经落伍了，如果要学某种技术，还是直接找视频教程比较快。
-不过因为知道了“持续集成”，即 Continuous integration，这种技术已经很常见了，不过我最近才学习到。用在 hexo 博客的部署上比较合适，整个部署也比较简单，适合我这种小白">
+<meta name="twitter:description" content="之前写过一个 Hexo 博客的搭建方法，搭建好之后我就没有怎么写博客了。一来是因为自己没什么好分享的（其实就是懒哈），二来是感觉静态技术博客这种形式已经落伍了，如果要学某种技术，还是直接找视频教程比较快。 不过因为知道了“持续集成”，即 Continuous integration，这种技术已经很常见了，不过我最近才学习到。用在 hexo 博客的部署上比较合适，整个部署也比较简单，适合我这种小白">
 <meta name="twitter:image" content="http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/111351727.jpg">
   
     <link rel="alternative" href="/atom.xml" title="SPIKE" type="application/atom+xml">
@@ -343,18 +341,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/03/05/genetic-algorithm/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/08/12/chrome-extensions-recommend/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          遗传算法入门
+          Chrome 插件推荐
         
       </div>
     </a>
   
   
-    <a href="/2016/08/12/chrome-extensions-recommend/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Chrome 插件推荐</div>
+    <a href="/2017/03/05/genetic-algorithm/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">遗传算法入门</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -519,14 +517,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">json</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">mcu</a>
               </li>
              
@@ -544,10 +534,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">trip</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">xml</a>
               </li>
             
             <div class="clearfix"></div>

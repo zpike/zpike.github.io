@@ -8,20 +8,18 @@
   <link rel="dns-prefetch" href="http://spikezz.com">
   <title>基于 Rasperry Pi 3 的家用 NAS 搭建 | SPIKE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近感觉对于 NAS 的需求越来越多了，主要是因为电子设备的增多，想要将所有媒体文件以及文档都放到一个地方统一管理，然后在世界任何地方可以方便存取，查阅。这样的场景想想就诱人。
-但是无奈群晖的 NAS 价格较高，个人用户还是比较难以承受的。不过很多其他方案可以实现，只是没有那么炫酷罢了。比如路由器自带的云存储，或者本篇文章要介绍的基于树莓派的家用 NAS 构建。">
+  <meta name="description" content="最近感觉对于 NAS 的需求越来越多了，主要是因为电子设备的增多，想要将所有媒体文件以及文档都放到一个地方统一管理，然后在世界任何地方可以方便存取，查阅。这样的场景想想就诱人。 但是无奈群晖的 NAS 价格较高，个人用户还是比较难以承受的。不过很多其他方案可以实现，只是没有那么炫酷罢了。比如路由器自带的云存储，或者本篇文章要介绍的基于树莓派的家用 NAS 构建。">
+<meta name="keywords" content="nas">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于 Rasperry Pi 3 的家用 NAS 搭建">
 <meta property="og:url" content="http://spikezz.com/2017/03/08/nas-based-on-rasperry-pi/index.html">
 <meta property="og:site_name" content="SPIKE">
-<meta property="og:description" content="最近感觉对于 NAS 的需求越来越多了，主要是因为电子设备的增多，想要将所有媒体文件以及文档都放到一个地方统一管理，然后在世界任何地方可以方便存取，查阅。这样的场景想想就诱人。
-但是无奈群晖的 NAS 价格较高，个人用户还是比较难以承受的。不过很多其他方案可以实现，只是没有那么炫酷罢了。比如路由器自带的云存储，或者本篇文章要介绍的基于树莓派的家用 NAS 构建。">
+<meta property="og:description" content="最近感觉对于 NAS 的需求越来越多了，主要是因为电子设备的增多，想要将所有媒体文件以及文档都放到一个地方统一管理，然后在世界任何地方可以方便存取，查阅。这样的场景想想就诱人。 但是无奈群晖的 NAS 价格较高，个人用户还是比较难以承受的。不过很多其他方案可以实现，只是没有那么炫酷罢了。比如路由器自带的云存储，或者本篇文章要介绍的基于树莓派的家用 NAS 构建。">
 <meta property="og:image" content="http://oc1hnrd8p.bkt.clouddn.com/photos/20170309/164143432.jpg">
 <meta property="og:updated_time" content="2017-03-10T02:10:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于 Rasperry Pi 3 的家用 NAS 搭建">
-<meta name="twitter:description" content="最近感觉对于 NAS 的需求越来越多了，主要是因为电子设备的增多，想要将所有媒体文件以及文档都放到一个地方统一管理，然后在世界任何地方可以方便存取，查阅。这样的场景想想就诱人。
-但是无奈群晖的 NAS 价格较高，个人用户还是比较难以承受的。不过很多其他方案可以实现，只是没有那么炫酷罢了。比如路由器自带的云存储，或者本篇文章要介绍的基于树莓派的家用 NAS 构建。">
+<meta name="twitter:description" content="最近感觉对于 NAS 的需求越来越多了，主要是因为电子设备的增多，想要将所有媒体文件以及文档都放到一个地方统一管理，然后在世界任何地方可以方便存取，查阅。这样的场景想想就诱人。 但是无奈群晖的 NAS 价格较高，个人用户还是比较难以承受的。不过很多其他方案可以实现，只是没有那么炫酷罢了。比如路由器自带的云存储，或者本篇文章要介绍的基于树莓派的家用 NAS 构建。">
 <meta name="twitter:image" content="http://oc1hnrd8p.bkt.clouddn.com/photos/20170309/164143432.jpg">
   
     <link rel="alternative" href="/atom.xml" title="SPIKE" type="application/atom+xml">
@@ -307,11 +305,15 @@
   
 <nav id="article-nav">
   
-  
-    <a href="/2017/03/05/genetic-algorithm/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">遗传算法入门</div>
-      <i class="icon-circle-right"></i>
+    <a href="/2017/03/05/genetic-algorithm/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          遗传算法入门
+        
+      </div>
     </a>
+  
   
 </nav>
 
@@ -474,14 +476,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">json</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">mcu</a>
               </li>
              
@@ -499,10 +493,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">trip</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">xml</a>
               </li>
             
             <div class="clearfix"></div>
