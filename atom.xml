@@ -226,7 +226,7 @@
     <link href="http://spikezz.com/2017/02/20/auto-deploy-hexo-on-travis-ci/"/>
     <id>http://spikezz.com/2017/02/20/auto-deploy-hexo-on-travis-ci/</id>
     <published>2017-02-20T06:00:00.000Z</published>
-    <updated>2017-03-10T02:10:20.000Z</updated>
+    <updated>2017-04-13T08:12:18.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/111351727.jpg" alt="mark"></p>
 <p>之前写过一个 <a href="http://spikezz.com/2016/07/07/how-to-create-a-hexo-blog">Hexo 博客的搭建方法</a>，搭建好之后我就没有怎么写博客了。一来是因为自己没什么好分享的（其实就是懒哈），二来是感觉静态技术博客这种形式已经落伍了，如果要学某种技术，还是直接找视频教程比较快。</p>
@@ -307,7 +307,7 @@
     <link href="http://spikezz.com/2016/08/12/chrome-extensions-recommend/"/>
     <id>http://spikezz.com/2016/08/12/chrome-extensions-recommend/</id>
     <published>2016-08-12T06:00:05.000Z</published>
-    <updated>2017-04-01T00:50:50.000Z</updated>
+    <updated>2017-04-13T08:53:06.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://oc1hnrd8p.bkt.clouddn.com/photos/20170303/092450509.png" alt="mark"></p>
 <p>自从科学上网之后，用<code>Chrome</code>的次数也明显增多。就目前来看，相对最好用的就它了，不过也分情况，如果只是简单上上网，又在 Mac 下，还是建议用 Safari，不然温度吓死人。不过最近升级之后没那么夸张了，Mac也不会太热。</p>
@@ -343,7 +343,7 @@
 <p><code>Telegram</code>，wechat太乱了，这里还挺清爽，有营养的谈话比较多一点。不过现在居然也要翻墙了。</p>
 <p><code>feedly</code>，常用来看rss的，win上没有reedly还是用这个吧。</p>
 <p><code>draw.io Diagrams</code>，这个用来画画流程图，还是蛮方便的。</p>
-<p>‘Free Rider HD’，这是个小游戏，感觉做得还挺有趣。</p>
+<p><code>Free Rider HD</code>，这是个小游戏，感觉做得还挺有趣。</p>
 ]]></content>
     
     <summary type="html">
