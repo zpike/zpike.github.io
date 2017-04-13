@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://spikezz.com/"/>
-  <updated>2017-04-13T06:52:20.000Z</updated>
+  <updated>2017-04-13T07:00:00.000Z</updated>
   <id>http://spikezz.com/</id>
   
   <author>
@@ -20,12 +20,12 @@
     <link href="http://spikezz.com/2017/04/10/about-kindle-jailbreak/"/>
     <id>http://spikezz.com/2017/04/10/about-kindle-jailbreak/</id>
     <published>2017-04-10T02:25:09.000Z</published>
-    <updated>2017-04-13T06:52:20.000Z</updated>
+    <updated>2017-04-13T07:00:00.000Z</updated>
     
     <content type="html"><![CDATA[<p>Kindle看书久了，稍微对中文字体的支持度比较不那么满意，所以搜索看看如何更换字体，发现只有越狱一条道路。不然只能用内嵌，但是书籍大小会变大，预料速度还会变慢。</p>
 <p>所以还是越狱了吧。</p>
 <a id="more"></a>
-<p>中文字体确实大坑，如果涉及到中文书籍排版坑就更大了。这里只探讨一下kindle用什么中文字体看书比较好。</p>
+<p>中文字体确实大坑，如果涉及到中文书籍排版坑就更大了。这里只探讨一下indle用什么中文字体看书比较好。</p>
 <p>第一步，先看文末的几个链接。第一个链接最好，很详细，照着做基本不会出什么问题。</p>
 <p>我总结一下：</p>
 <p>要越狱先要满足越狱条件。型号要对，并且离线模式。</p>
@@ -35,15 +35,15 @@
 <p>然后是装两个必须的插件，一个是插件管理器，叫KUAL，这个必须的。</p>
 <p>然后是一个MRPI，插件安装器。其实它是KUAL的插件，以后安装各种插件要通过它来安装。直接刷bin貌似固件不支持。</p>
 <p>然后就越狱成功了。</p>
-<p>之后要换kindle字体的话，还需要装上 <code>Font Hack</code> 这个插件。可以看看<a href="https://www.mobileread.com/forums/showthread.php?t=219405" target="_blank" rel="external">官方指南</a>。</p>
+<p>之后要换Kindle字体的话，还需要装上 <code>Font Hack</code> 这个插件。可以看看<a href="https://www.mobileread.com/forums/showthread.php?t=219405" target="_blank" rel="external">官方指南</a>。</p>
 <p>要注意的是，这个方法暂时只能替换系统自带的四种字体。看书一般用宋体，或者黑体。</p>
-<p>目前试过几种字体，比较流行的方正兰亭宋，思源黑，冬青黑等，当然还有刚出的思源宋。这些字体都不错，各有用处，适用场景非常多。目前我在用汉仪的新人文宋，感觉很适合看书。这个字体在微信读书app中也有，试过感觉不错。还有就是个人感觉ppi高选宋体，低选黑体。</p>
+<p>目前试过几种字体，比较流行的方正兰亭宋，思源黑，冬青黑等，当然还有刚出的思源宋。这些字体都不错，各有用处，适用场景非常多。目前我在用汉仪的新人文宋，感觉很适合看书。这个字体是在微信读书app中发现的，试过感觉不错。（汉仪的中文字体确实不错，很有特色）还有就是个人感觉ppi高选宋体，低选黑体。</p>
 <p>关于字体还真是很多理论，深究下去看书时间都不够了，也罢。</p>
 <p>参考链接:</p>
 <ul>
-<li><a href="http://lifehacker.com/how-to-jailbreak-your-kindle-1783864074" target="_blank" rel="external">how to jailbreak your kindle</a></li>
-<li><a href="https://kindlefere.com/post/410.html" target="_blank" rel="external">Kindle 5.8.x 越狱教程：利用特制固件越狱</a></li>
-<li><a href="https://kindlefere.com/post/423.html" target="_blank" rel="external">Kindle 中文字体推荐：更换一下字形口味</a></li>
+<li><a href="http://lifehacker.com/how-to-jailbreak-your-Kindle-1783864074" target="_blank" rel="external">how to jailbreak your Kindle</a></li>
+<li><a href="https://Kindlefere.com/post/410.html" target="_blank" rel="external">Kindle 5.8.x 越狱教程：利用特制固件越狱</a></li>
+<li><a href="https://Kindlefere.com/post/423.html" target="_blank" rel="external">Kindle 中文字体推荐：更换一下字形口味</a></li>
 </ul>
 ]]></content>
     
@@ -55,7 +55,7 @@
     </summary>
     
     
-      <category term="kindle" scheme="http://spikezz.com/tags/kindle/"/>
+      <category term="Kindle" scheme="http://spikezz.com/tags/Kindle/"/>
     
   </entry>
   
