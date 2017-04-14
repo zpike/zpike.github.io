@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://spikezz.com/2017/04/10/duoshuo-die-review/</loc>
+    
+    <lastmod>2017-04-13T09:18:06.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://spikezz.com/2015/07/12/trip-between-chuan-tibet/</loc>
+    
+    <lastmod>2017-04-13T09:06:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://spikezz.com/2016/08/12/chrome-extensions-recommend/</loc>
     
     <lastmod>2017-04-13T08:53:06.000Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://spikezz.com/2017/02/20/auto-deploy-hexo-on-travis-ci/</loc>
     
     <lastmod>2017-04-13T08:12:18.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://spikezz.com/2017/04/10/duoshuo-die-review/</loc>
-    
-    <lastmod>2017-04-13T07:15:05.000Z</lastmod>
     
   </url>
   
@@ -58,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://spikezz.com/2015/08/13/Bleu/</loc>
+    <loc>http://spikezz.com/2016/02/19/mcu-powerup/</loc>
     
     <lastmod>2017-03-10T02:05:36.000Z</lastmod>
     
@@ -66,6 +73,13 @@
   
   <url>
     <loc>http://spikezz.com/2015/08/14/Rouge/</loc>
+    
+    <lastmod>2017-03-10T02:05:36.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://spikezz.com/2015/08/13/Bleu/</loc>
     
     <lastmod>2017-03-10T02:05:36.000Z</lastmod>
     
@@ -80,20 +94,6 @@
   
   <url>
     <loc>http://spikezz.com/2015/08/12/Blanc/</loc>
-    
-    <lastmod>2017-03-10T02:05:36.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://spikezz.com/2016/02/19/mcu-powerup/</loc>
-    
-    <lastmod>2017-03-10T02:05:36.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://spikezz.com/2015/07/12/trip-between-chuan-tibet/</loc>
     
     <lastmod>2017-03-10T02:05:36.000Z</lastmod>
     
