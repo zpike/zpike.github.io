@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://spikezz.com/"/>
-  <updated>2017-04-15T00:51:59.000Z</updated>
+  <updated>2017-04-17T06:02:09.000Z</updated>
   <id>http://spikezz.com/</id>
   
   <author>
@@ -16,11 +16,78 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Kindle 字体更换</title>
-    <link href="http://spikezz.com/2017/04/10/kindle-font/"/>
-    <id>http://spikezz.com/2017/04/10/kindle-font/</id>
+    <title>在 Mac 上安装 Tomcat</title>
+    <link href="http://spikezz.com/2017/04/15/install-tomcat-on-mac/"/>
+    <id>http://spikezz.com/2017/04/15/install-tomcat-on-mac/</id>
+    <published>2017-04-15T05:29:17.000Z</published>
+    <updated>2017-04-17T06:02:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>部署网络开发环境，Apache是一定要遇到的。如果更加深入研究，还要看http协议什么的。如果要学习JSP或者Servlet，Tomcat 就会出现了。两者的区别，从开发语言上看，Http Server是用C开发的，Tomcat是用纯Java开发的。Tomcat 用来部署 JSPs 和 Java Servlet，是服务于Java类的技术的（毕竟是自己开发的嘛）。所以可以将Tomcat看做是一个Servlet的容易，Java项目中，将产生的WAR文件，放到tomcat部署的文件夹下就可以了。</p>
+<a id="more"></a>
+<p>基于前面的网络部署，在Mac下还是用MAMP开发，但是普通版本没有自带Tomcat，所以怎么讲Tomcat放到这里面呢？</p>
+<p>首先下载 <a href="https://tomcat.apache.org/download-80.cgi#8.5.13" target="_blank" rel="external">Tomcat</a>，目前8.5的版本是最新的稳定的版本，当然追新的也可以用版本9.0，貌似还是alpha，所以还是用个稳定的版本先学习下。</p>
+<p>关于软件的版本控制，在网络开发中还是比较麻烦的。IDE工具可以配置各种版本的软件，但是命令行下面，如何方便的管理不同版本，还真比较需要多注意。当然homebrew做得不错，很多版本差异的问题可以得到解决。其他软件，安装源代码的时候也需要注意区分。不过这是另外一个话题，以后再说。</p>
+<p><img src="https://ww3.sinaimg.cn/large/006tNc79gy1fenguoqz52j30t408240n.jpg" alt=""></p>
+<p>安装好了MAMP之后，下载好Tomcat，解压到默认文件夹。然后放到MAMP文件夹下。应该是：</p>
+<p><code>/Applications/MAMP/apache-tomcat-8.5.13</code></p>
+<p>然后在MAMP目录下，创建一个tomcat文件夹的链接：（这样就不用在意版本号了，方便各种配置命令）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd /Applications/MAMP</div><div class="line">ln -s /Applications/MAMP/apache-tomcat-8.5.13 tomcat</div></pre></td></tr></table></figure></p>
+<p>将tomcat目录下的bin文件夹下所有sh文件都加个执行的权限：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd /Applications/tomcat/bin</div><div class="line">ls -l *.sh | xargs chmod +x</div></pre></td></tr></table></figure></p>
+<p>修改apache启动文件（<code>/Applications/MAMP/bin/startApache.sh</code>），最后加一行：</p>
+<pre><code>/Applications/MAMP/tomcat/bin/startup.sh
+</code></pre><p>修改apache的停止文件（<code>/Applications/MAMP/bin/stopApache.sh</code>），如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"># /bin/sh</div><div class="line">/Applications/MAMP/tomcat/bin/shutdown.sh</div><div class="line">/Applications/MAMP/Library/bin/apachectl stop</div><div class="line"></div><div class="line">sleep 2</div><div class="line">kill -TERM ps aux | grep [t]omcat | awk &apos;&#123; print $2&#125;&apos;</div><div class="line">sleep 1</div><div class="line">kill -9 ps aux | grep [t]omcat | awk &apos;&#123; print $2&#125;&apos;</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;部署网络开发环境，Apache是一定要遇到的。如果更加深入研究，还要看http协议什么的。如果要学习JSP或者Servlet，Tomcat 就会出现了。两者的区别，从开发语言上看，Http Server是用C开发的，Tomcat是用纯Java开发的。Tomcat 用来部署 JSPs 和 Java Servlet，是服务于Java类的技术的（毕竟是自己开发的嘛）。所以可以将Tomcat看做是一个Servlet的容易，Java项目中，将产生的WAR文件，放到tomcat部署的文件夹下就可以了。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MAMP 基础</title>
+    <link href="http://spikezz.com/2017/04/15/MAMP-basics/"/>
+    <id>http://spikezz.com/2017/04/15/MAMP-basics/</id>
+    <published>2017-04-15T05:28:48.000Z</published>
+    <updated>2017-04-15T08:48:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://ww2.sinaimg.cn/large/006tNc79gy1fengmmsguqj31280lyn26.jpg" alt=""></p>
+<p>对于搞网络开发的，基本上都要被开发环境的安装耗费点精力。不过个人感觉虽然很折腾，但是确实能学到点各个组件的一些特点，配置方法等。如果用集成得很好的软件，这其中的一些知识点就略过了。不过如果你弄个LAMP或者WAMP，对于集成得比较好的软件就会比较喜欢了。</p>
+<a id="more"></a>
+<p>用过一些集成开发环境的软件，比如XAMPP，WampServer，Usbwebserver等。这些软件都各有特点，用起来都还不错，当然有的还是不大稳定，或者对平台比较挑剔。试下来，建议windows就用WampServer，Mac的话就用MAMP。尤其是MAMP，做得很不错，而且还有Pro版本可以使用，对于初学者，免费版本其实就够了。</p>
+<p>首先去<a href="https://www.mamp.info/en/downloads/" target="_blank" rel="external">官网下载</a>，然后安装。最新版本是4.1.1，各个组件都做了相应的更新。对版本有要求的要稍微改一下对应的组件的版本号，就可以开始使用了。</p>
+<p><img src="https://ww2.sinaimg.cn/large/006tNc79gy1fenetmvv4vj311g0qptew.jpg" alt="mamp"></p>
+<p>端口是要注意的，新手可能在这边纠结，因为很多默认的端口不一致，比如在Jetbrains的IDE中开发，端口设置的一般是65543之类，要修改成MAMP的对应port，不然怎么搞都不行。当然也可以改MAMP的端口设置。不过我建议还是用它默认的端口，不容易冲突。</p>
+<p><img src="https://ww4.sinaimg.cn/large/006tNc79gy1fenezvm99sj30fh08taas.jpg" alt="port"></p>
+<p>开发HTML或者PHP的，文件目录可以设置到自己常用的目录，或者也可以用默认的htdocs，建议使用自己的目录，比较不容易乱，也好找。</p>
+<p>弄好之后应该可以用浏览器打开localhost了，看看相关参数，了解一下。mysql可以用phpMyAdmin查看管理。当然更深入的设置还是需要借助命令行。</p>
+<p><img src="https://ww3.sinaimg.cn/large/006tNc79gy1fenfdk0788j30l60fhmyu.jpg" alt="img"></p>
+<p>配置文件都放在conf目录下，默认是没有mysql的配置文件的，即<code>my.cnf</code> 文件。模板要去<code>support-files</code>中去拷贝。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cp /Applications/MAMP/Library/support-files/my-medium.cnf /Applications/MAMP/conf/my.cnf</div></pre></td></tr></table></figure>
+<p>但是貌似最新版本中没有了，老版本是有的，不知道mamp将cnf文件放哪去了。不过可以这文件也很好下载。</p>
+<p><img src="https://ww1.sinaimg.cn/large/006tNc79gy1fengj5bsxaj30l60fhmyj.jpg" alt=""></p>
+<p>还有修改mysql的密码需求比较常见，也需要借助命令行。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/Applications/MAMP/Library/bin/mysqladmin -u root -p password &lt;NEWPASSWORD&gt;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://ww2.sinaimg.cn/large/006tNc79gy1fengmmsguqj31280lyn26.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;对于搞网络开发的，基本上都要被开发环境的安装耗费点精力。不过个人感觉虽然很折腾，但是确实能学到点各个组件的一些特点，配置方法等。如果用集成得很好的软件，这其中的一些知识点就略过了。不过如果你弄个LAMP或者WAMP，对于集成得比较好的软件就会比较喜欢了。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Kindle更换字体</title>
+    <link href="http://spikezz.com/2017/04/10/change-kindle-fonts/"/>
+    <id>http://spikezz.com/2017/04/10/change-kindle-fonts/</id>
     <published>2017-04-10T02:25:09.000Z</published>
-    <updated>2017-04-15T00:51:59.000Z</updated>
+    <updated>2017-04-17T03:06:23.000Z</updated>
     
     <content type="html"><![CDATA[<p>Kindle看书久了，稍微对中文字体的支持度比较不那么满意，所以搜索看看如何更换字体，发现只有越狱一条道路。不然只能用内嵌，但是书籍大小会变大，预料速度还会变慢。</p>
 <p>所以还是越狱了吧。</p>
@@ -66,7 +133,7 @@
     <link href="http://spikezz.com/2017/04/10/about-reviews/"/>
     <id>http://spikezz.com/2017/04/10/about-reviews/</id>
     <published>2017-04-10T02:00:06.000Z</published>
-    <updated>2017-04-15T00:54:02.000Z</updated>
+    <updated>2017-04-15T06:54:42.000Z</updated>
     
     <content type="html"><![CDATA[<p>最近国内的<strong>多说</strong>挂了，官网说是业务转移，姑且信吧，不靠谱的又不止这一家。</p>
 <p>转移到<strong>disqus</strong>的话，试过，貌似不好加载，即使翻墙也不大容易，主题可能有些问题。但是又找不到其他比较简单够用的主题，索性就不用评论系统了。其实也没几个评论的，显得多余。</p>
@@ -76,8 +143,7 @@
 <p>不过文章我还是会更新的，发现之前写的有些文字还是问题多多，通顺的基础上还有很多纰漏，或者要添加修改的，反正持续更新吧。</p>
 <p>还有写这个博客我感觉还是用hexo系统命令好，很多需要折腾的问题还是要折腾的，用自动构建开始是挺爽，但是也是在你已经开发修改完整个基础框架之后。所以就固定在mba上写吧，用hexo系统命令写作，功能组件手动更新也能学到更多的东西。</p>
 <p>话说博客系统也是个大坑，很多可以使用的系统不谈，还有更多可以折腾的东西可以用到模板上。使用现有的模板真的还是有很多问题，拓展起来比较麻烦。学习前端各种知识还是挺有必要的。</p>
-<p>这里推荐几个看到的博客，样式简单，但是确很有内涵。比如<a href="1">Dave Ceddia</a>的个人博客，有教你如何开发React，有兴趣的可以看看，入门很适合。还有<a href="https://flinhong.com/blog/" target="_blank" rel="external">flinhong</a>，以及<a href="https://imququ.com/" target="_blank" rel="external">Jerry Qu</a>的博客，都非常喜欢。内容也很棒，干货很多，强烈推荐看看。</p>
-<p>以上。</p>
+<p>这里推荐几个博客，样式简单，但是很有内涵。比如<a href="1">Dave Ceddia</a>的个人博客，有教你如何开发React，有兴趣的可以看看，非常适合入门。还有<a href="https://flinhong.com/blog/" target="_blank" rel="external">flinhong</a>，以及<a href="https://imququ.com/" target="_blank" rel="external">Jerry Qu</a>的博客，用到的技术貌似都比较复杂，很多没听过的东西，做起来估计不易，不过喜欢折腾的，又想要独特博客风格的可以一试。</p>
 ]]></content>
     
     <summary type="html">
@@ -703,7 +769,7 @@
     <link href="http://spikezz.com/2015/08/01/sina-blog-organize/"/>
     <id>http://spikezz.com/2015/08/01/sina-blog-organize/</id>
     <published>2015-08-01T06:00:05.000Z</published>
-    <updated>2017-03-10T02:05:36.000Z</updated>
+    <updated>2017-04-15T07:01:56.000Z</updated>
     
     <content type="html"><![CDATA[<p>既然这里是我的博客空间，那很久以前写的博客也可以放上来嘛，虽然很久了，看起来很幼稚，好似不是我写的，不过还是值得留念。</p>
 <p>博客刚出现的时候，在新浪写过，不过那个空间各种丑陋，写了一些就没写了。之后在blogbus写过，那里蛮清爽，不过之后好像不能访问了。今天用帐号一登陆，居然都还在。还有QQ空间，写过一阵，也可以弄过来，凑凑字数。</p>
@@ -759,10 +825,12 @@
     <link href="http://spikezz.com/2015/07/12/trip-to-tibet/"/>
     <id>http://spikezz.com/2015/07/12/trip-to-tibet/</id>
     <published>2015-07-12T06:00:05.000Z</published>
-    <updated>2017-04-13T09:06:12.000Z</updated>
+    <updated>2017-04-15T07:03:51.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/115013861.gif" alt="mark"></p>
-<p>Day1<br>今天中午从成都出发 去拉萨 先到雅安 不过很难搭车 因为在高速路口 最终买车票去的雅安 后来听说真的有两个驴友成功搭到车 真是佩服。到雅安后步行十几公里终于搭上去天全镇的车 是辆宝马 师傅是个在天全做建筑的老板 途中遇到两个北京的驴友 一男一女 然后结伴而行 一路汽车尾气 灰尘好多 不过景色还行 姑且忽略刚上路的不适。 晚上到天全住在一个小客栈 洗澡 吹空调 感觉到不一样的惬意。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p>这篇流水账是大约毕业后一年和好友去西藏旅行是途中所写。当然没什么任何攻略的价值，也估计没有任何文学价值。只是途中用手机记录下所思所想，其实可以记录的东西还是很多，只是不想或者没空整理罢了。</p>
+<a id="more"></a>
+<p><img src="http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/115013861.gif" alt="mark"></p>
+<p>Day1<br>今天中午从成都出发 去拉萨 先到雅安 不过很难搭车 因为在高速路口 最终买车票去的雅安 后来听说真的有两个驴友成功搭到车 真是佩服。到雅安后步行十几公里终于搭上去天全镇的车 是辆宝马 师傅是个在天全做建筑的老板 途中遇到两个北京的驴友 一男一女 然后结伴而行 一路汽车尾气 灰尘好多 不过景色还行 姑且忽略刚上路的不适。 晚上到天全住在一个小客栈 洗澡 吹空调 感觉到不一样的惬意。</p>
 <p><img src="http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/113425227.jpg" alt="mark"></p>
 <p>Day2<br>今天从天全出发去雅江 途中经过泸定 康定 康定很漂亮 沿城有非常清澈湍急的河流 空气很清新 可惜没时间停留。 早上走了几公里搭上一个去康定的大货车 司机是藏人 很年轻 21岁 和我聊了很多 了解他们生活的艰辛 川藏线上只能靠跑运输挣钱  因为另外三个驴友后来搭上量卡宴 速度很快 早到了康定 所以我在二郎山下车搭了另一辆速度快的6人坐的商务车 司机真是好人 搭了一车驴友和在康定工作的人等。 从康定去雅江的路上搭到一个面包车 司机依然是藏人 沉默寡言 但是人很好 搭我们到一高山处大概有四千米左右。 后来我们四人幸运得遇到一个丰田SUV车队 搭我们四人速度到了雅江——一个傍山而建的小城。晚上在雅江一个居民家住宿 一人10元 非常实惠 不过吃的东西比较贵 估计是看游客抬高物价。</p>
 <p><img src="http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/113502435.jpg" alt="mark"></p>
@@ -792,8 +860,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/115013861.gif&quot; alt=&quot;mark&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Day1&lt;br&gt;今天中午从成都出发 去拉萨 先到雅安 不过很难搭车 因为在高速路口 最终买车票去的雅安 后来听说真的有两个驴友成功搭到车 真是佩服。到雅安后步行十几公里终于搭上去天全镇的车 是辆宝马 师傅是个在天全做建筑的老板 途中遇到两个北京的驴友 一男一女 然后结伴而行 一路汽车尾气 灰尘好多 不过景色还行 姑且忽略刚上路的不适。 晚上到天全住在一个小客栈 洗澡 吹空调 感觉到不一样的惬意。&lt;br&gt;
+      &lt;p&gt;这篇流水账是大约毕业后一年和好友去西藏旅行是途中所写。当然没什么任何攻略的价值，也估计没有任何文学价值。只是途中用手机记录下所思所想，其实可以记录的东西还是很多，只是不想或者没空整理罢了。&lt;/p&gt;
     
     </summary>
     
