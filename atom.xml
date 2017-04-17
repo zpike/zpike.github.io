@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://spikezz.com/"/>
-  <updated>2017-04-17T06:09:03.000Z</updated>
+  <updated>2017-04-17T06:12:46.000Z</updated>
   <id>http://spikezz.com/</id>
   
   <author>
@@ -20,11 +20,11 @@
     <link href="http://spikezz.com/2017/04/15/install-tomcat-on-mac/"/>
     <id>http://spikezz.com/2017/04/15/install-tomcat-on-mac/</id>
     <published>2017-04-15T05:29:17.000Z</published>
-    <updated>2017-04-17T06:09:03.000Z</updated>
+    <updated>2017-04-17T06:12:46.000Z</updated>
     
-    <content type="html"><![CDATA[<p>部署网络开发环境，Apache是一定要遇到的。如果更加深入研究，还要看http协议什么的。如果要学习JSP或者Servlet，Tomcat 就会出现了。两者的区别，从开发语言上看，Http Server是用C开发的，Tomcat是用纯Java开发的。Tomcat 用来部署 JSPs 和 Java Servlet，是服务于Java类的技术的（毕竟是自己开发的嘛）。所以可以将Tomcat看做是一个Servlet的容易，Java项目中，将产生的WAR文件，放到tomcat部署的文件夹下就可以了。</p>
+    <content type="html"><![CDATA[<p>部署网络开发环境，Apache是一定要遇到的。如果更加深入研究，还要看http协议什么的。如果要学习JSP或者Servlet，Tomcat 就会出现了。两者的区别，从开发语言上看，Http Server是用C开发的，Tomcat是用纯Java开发的。Tomcat 用来部署 JSPs 和 Java Servlet，是服务于Java类的技术的（毕竟是自己开发的嘛）。所以可以将Tomcat看做是一个Servlet的容器，Java项目中，将产生的WAR文件，放到tomcat部署的文件夹下就可以了。</p>
 <a id="more"></a>
-<p>基于前面的网络部署，在Mac下还是用MAMP开发，但是普通版本没有自带Tomcat，所以怎么讲Tomcat放到这里面呢？</p>
+<p>基于前面的网络部署，在Mac下还是用MAMP开发，但是普通版本没有自带Tomcat，所以怎么将Tomcat放到这里面呢？</p>
 <p>首先下载 <a href="https://tomcat.apache.org/download-80.cgi#8.5.13" target="_blank" rel="external">Tomcat</a>，目前8.5的版本是最新的稳定的版本，当然追新的也可以用版本9.0，貌似还是alpha，所以还是用个稳定的版本先学习下。</p>
 <p>版本对比：</p>
 <p><img src="https://ww3.sinaimg.cn/large/006tNc79gy1fenguoqz52j30t408240n.jpg" alt=""></p>
@@ -39,7 +39,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;部署网络开发环境，Apache是一定要遇到的。如果更加深入研究，还要看http协议什么的。如果要学习JSP或者Servlet，Tomcat 就会出现了。两者的区别，从开发语言上看，Http Server是用C开发的，Tomcat是用纯Java开发的。Tomcat 用来部署 JSPs 和 Java Servlet，是服务于Java类的技术的（毕竟是自己开发的嘛）。所以可以将Tomcat看做是一个Servlet的容易，Java项目中，将产生的WAR文件，放到tomcat部署的文件夹下就可以了。&lt;/p&gt;
+      &lt;p&gt;部署网络开发环境，Apache是一定要遇到的。如果更加深入研究，还要看http协议什么的。如果要学习JSP或者Servlet，Tomcat 就会出现了。两者的区别，从开发语言上看，Http Server是用C开发的，Tomcat是用纯Java开发的。Tomcat 用来部署 JSPs 和 Java Servlet，是服务于Java类的技术的（毕竟是自己开发的嘛）。所以可以将Tomcat看做是一个Servlet的容器，Java项目中，将产生的WAR文件，放到tomcat部署的文件夹下就可以了。&lt;/p&gt;
     
     </summary>
     
