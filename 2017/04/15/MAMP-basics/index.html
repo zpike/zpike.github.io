@@ -10,9 +10,9 @@
 <p><img src="https://ww3.sinaimg.cn/large/006tNc79gy1fenfdk0788j30l60fhmyu.jpg" alt="img"></p>
 <p>配置文件都放在conf目录下，默认是没有mysql的配置文件的，即<code>my.cnf</code> 文件。模板要去<code>support-files</code>中去拷贝。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cp /Applications/MAMP/Library/support-files/my-medium.cnf /Applications/MAMP/conf/my.cnf</div></pre></td></tr></table></figure>
-<p>但是貌似最新版本中没有了，老版本是有的，不知道mamp将cnf文件放哪去了。不过可以这文件也很好下载。</p>
+<p>但是貌似最新版本中没有了，老版本是有的，新版不知道将cnf文件模板放哪去了。不过这文件也很好下载。</p>
 <p><img src="https://ww1.sinaimg.cn/large/006tNc79gy1fengj5bsxaj30l60fhmyj.jpg" alt=""></p>
-<p>还有修改mysql的密码需求比较常见，也需要借助命令行。</p>
+<p>还有修改 MySQL 的密码需求比较常见，也需要借助命令行。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/Applications/MAMP/Library/bin/mysqladmin -u root -p password &lt;NEWPASSWORD&gt;</div></pre></td></tr></table></figure>
-<p>不过对于测试就不要改密码了，忘记密码还是挺麻烦的。</p>
+<p><newpassword>换成自己的密码即可。不过我感觉各种密码好乱，最好不要轻易修改，忘记密码的话挺麻烦。</newpassword></p>
 </div></article></div></main><footer><div class="paginator"><a href="/2017/04/10/change-kindle-fonts/" class="prev">PREV</a><a href="/2017/04/15/install-tomcat-on-mac/" class="next">NEXT</a></div><div class="copyright"><p>© 2015 - 2017 <a href="http://spikezz.com">Spike Joe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/zpike/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>

@@ -51,7 +51,7 @@
     <link href="http://spikezz.com/2017/04/15/MAMP-basics/"/>
     <id>http://spikezz.com/2017/04/15/MAMP-basics/</id>
     <published>2017-04-15T05:28:48.000Z</published>
-    <updated>2017-04-17T06:07:19.000Z</updated>
+    <updated>2017-04-17T07:05:54.000Z</updated>
     
     <content type="html"><![CDATA[<p>对于搞网络开发的，基本上都要被开发环境的安装耗费点精力。不过个人感觉虽然很折腾，但是确实能学到点各个组件的一些特点，配置方法等。如果用集成得很好的软件，这其中的一些知识点就略过了。不过如果你弄个LAMP或者WAMP，对于集成得比较好的软件就会比较喜欢了。</p>
 <a id="more"></a>
@@ -65,11 +65,11 @@
 <p><img src="https://ww3.sinaimg.cn/large/006tNc79gy1fenfdk0788j30l60fhmyu.jpg" alt="img"></p>
 <p>配置文件都放在conf目录下，默认是没有mysql的配置文件的，即<code>my.cnf</code> 文件。模板要去<code>support-files</code>中去拷贝。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cp /Applications/MAMP/Library/support-files/my-medium.cnf /Applications/MAMP/conf/my.cnf</div></pre></td></tr></table></figure>
-<p>但是貌似最新版本中没有了，老版本是有的，不知道mamp将cnf文件放哪去了。不过可以这文件也很好下载。</p>
+<p>但是貌似最新版本中没有了，老版本是有的，新版不知道将cnf文件模板放哪去了。不过这文件也很好下载。</p>
 <p><img src="https://ww1.sinaimg.cn/large/006tNc79gy1fengj5bsxaj30l60fhmyj.jpg" alt=""></p>
-<p>还有修改mysql的密码需求比较常见，也需要借助命令行。</p>
+<p>还有修改 MySQL 的密码需求比较常见，也需要借助命令行。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/Applications/MAMP/Library/bin/mysqladmin -u root -p password &lt;NEWPASSWORD&gt;</div></pre></td></tr></table></figure>
-<p>不过对于测试就不要改密码了，忘记密码还是挺麻烦的。</p>
+<p><newpassword>换成自己的密码即可。不过我感觉各种密码好乱，最好不要轻易修改，忘记密码的话挺麻烦。</newpassword></p>
 ]]></content>
     
     <summary type="html">
@@ -82,11 +82,11 @@
   </entry>
   
   <entry>
-    <title>Kindle更换字体</title>
+    <title>Kindle 更换字体</title>
     <link href="http://spikezz.com/2017/04/10/change-kindle-fonts/"/>
     <id>http://spikezz.com/2017/04/10/change-kindle-fonts/</id>
     <published>2017-04-10T02:25:09.000Z</published>
-    <updated>2017-04-17T03:06:23.000Z</updated>
+    <updated>2017-04-17T08:14:18.000Z</updated>
     
     <content type="html"><![CDATA[<p>Kindle看书久了，稍微对中文字体的支持度比较不那么满意，所以搜索看看如何更换字体，发现只有越狱一条道路。不然只能用内嵌，但是书籍大小会变大，预料速度还会变慢。</p>
 <p>所以还是越狱了吧。</p>
