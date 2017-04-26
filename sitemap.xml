@@ -2,9 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://spikezz.com/2017/04/15/install-tomcat-in-mamp/</loc>
+    
+    <lastmod>2017-04-22T02:38:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://spikezz.com/2017/04/10/change-kindle-fonts/</loc>
     
-    <lastmod>2017-04-17T08:14:18.000Z</lastmod>
+    <lastmod>2017-04-19T05:19:03.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://spikezz.com/2017/04/19/install-java-on-mac/</loc>
+    
+    <lastmod>2017-04-19T00:17:38.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://spikezz.com/2017/04/18/the-ultimate-vimrc/</loc>
+    
+    <lastmod>2017-04-18T05:17:04.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://spikezz.com/2017/04/18/install-opencms/</loc>
+    
+    <lastmod>2017-04-18T05:16:06.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://spikezz.com/2017/04/18/what-is-cms/</loc>
+    
+    <lastmod>2017-04-18T01:24:46.000Z</lastmod>
     
   </url>
   
@@ -12,13 +47,6 @@
     <loc>http://spikezz.com/2017/04/15/MAMP-basics/</loc>
     
     <lastmod>2017-04-17T07:05:54.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://spikezz.com/2017/04/15/install-tomcat-on-mac/</loc>
-    
-    <lastmod>2017-04-17T06:25:44.000Z</lastmod>
     
   </url>
   
@@ -93,6 +121,13 @@
   </url>
   
   <url>
+    <loc>http://spikezz.com/2015/08/13/Bleu/</loc>
+    
+    <lastmod>2017-03-10T02:05:36.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://spikezz.com/2015/08/12/Blanc/</loc>
     
     <lastmod>2017-03-10T02:05:36.000Z</lastmod>
@@ -101,13 +136,6 @@
   
   <url>
     <loc>http://spikezz.com/2015/08/14/Rouge/</loc>
-    
-    <lastmod>2017-03-10T02:05:36.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://spikezz.com/2015/08/13/Bleu/</loc>
     
     <lastmod>2017-03-10T02:05:36.000Z</lastmod>
     
