@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://spikezz.com/"/>
-  <updated>2017-04-19T00:17:38.000Z</updated>
+  <updated>2017-05-03T02:06:32.000Z</updated>
   <id>http://spikezz.com/</id>
   
   <author>
@@ -16,19 +16,54 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>install-java-on-mac</title>
+    <title>Mac OSX上安装 Java</title>
     <link href="http://spikezz.com/2017/04/19/install-java-on-mac/"/>
     <id>http://spikezz.com/2017/04/19/install-java-on-mac/</id>
     <published>2017-04-19T00:17:38.000Z</published>
-    <updated>2017-04-19T00:17:38.000Z</updated>
+    <updated>2017-05-03T02:06:32.000Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a>
+    <content type="html"><![CDATA[<p>在Mac上安装Java，之前都是在官方网站下载安装包，这样当然不怎么方便，所以自然就想到用homebrew安装了。查了一下，果然有办法，而且可以保持几个不同版本的JDK，方便不同版本测试。</p>
+<p>这个方法就是使用jenv，这个东西是基于rbenv开发的，不同的是rbenv是为了管理ruby，jenv是为了管理java。用jenv之后，就不用设置什么$JAVE_HOME变量了。而且可以方便切换各种不同版本的JDK，方便调试。</p>
+<a id="more"></a>
+<h3 id="主要步骤："><a href="#主要步骤：" class="headerlink" title="主要步骤："></a>主要步骤：</h3><ol>
+<li>安装 <code>brew-cask</code></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">brew update</div><div class="line">brew install caskroom/cask/brew-cask</div></pre></td></tr></table></figure>
+<ol>
+<li>安装 <code>jenv</code></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">brew install jenv</div><div class="line">echo &apos;export PATH=&quot;$HOME/.jenv/bin:$PATH&quot;&apos; &gt;&gt; ~/.zshrc</div><div class="line">echo &apos;eval &quot;$(jenv init -)&quot;&apos; &gt;&gt; ~/.zshrc</div></pre></td></tr></table></figure>
+<ol>
+<li>安装最新版本的<code>Java</code></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew cask install java</div></pre></td></tr></table></figure>
+<ol>
+<li>然后看看brew把Java安装到哪里去了，一般在如下位置</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/</div></pre></td></tr></table></figure>
+<ol>
+<li>然后在$HOME目录下加一个<code>.java-version</code>文件，里面写个<code>1.8</code>，结束。</li>
+</ol>
+<p>下面具体谈谈具体细节。</p>
+<p>首先Jenv是用来干啥的？</p>
+<p>主要是用来管理不同版本的Java的，什么Oracle JDK，OpenJDK等。可以去<a href="http://www.jenv.be" target="_blank" rel="external">官网</a>看看。</p>
+<p>在OSX中所有JVM都安装在 <code>/Library/Java/JavaVirtualMachines/</code>下，所以上面第四步添加安装的版本到jenv中。</p>
+<h3 id="查看安装了那些JDK版本。"><a href="#查看安装了那些JDK版本。" class="headerlink" title="查看安装了那些JDK版本。"></a>查看安装了那些JDK版本。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">~ ᐅ jenv versions</div><div class="line">  system</div><div class="line">* 1.8 (set by /Users/Spike/.java-version)</div><div class="line">  1.8.0.121</div><div class="line">  oracle64-1.8.0.121</div></pre></td></tr></table></figure>
+<h3 id="配置全局版本号"><a href="#配置全局版本号" class="headerlink" title="配置全局版本号"></a>配置全局版本号</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ jenv global oracle64-1.6.0.39</div></pre></td></tr></table></figure>
+<h3 id="配置本地版本号"><a href="#配置本地版本号" class="headerlink" title="配置本地版本号"></a>配置本地版本号</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">jenv local oracle64-1.6.0.39</div></pre></td></tr></table></figure>
+<h3 id="配置Shell版本号"><a href="#配置Shell版本号" class="headerlink" title="配置Shell版本号"></a>配置Shell版本号</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">jenv shell oracle64-1.6.0.39</div></pre></td></tr></table></figure>
+<h3 id="生成-Shims"><a href="#生成-Shims" class="headerlink" title="生成 Shims"></a>生成 Shims</h3><p>jenv可以将所有安装过的Java版本中的bin目录集合管理，即<code>~/.jenv/versions/*/bin/*</code>中的所有东西都放到shims文件夹下。每次安装完新版本都运行<code>jenv rehash</code>即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ jenv rehash</div></pre></td></tr></table></figure>
+<h3 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h3><ul>
+<li><a href="https://github.com/gcuisinier/jenv/blob/master/README.md" target="_blank" rel="external">Master your Java Environnement with jenv</a></li>
+<li><a href="https://forum.shakacode.com/t/install-java-1-8-on-mac-os-el-capitan/389" target="_blank" rel="external">Install Java 1.8 on Mac OS El Capitan</a></li>
+</ul>
 ]]></content>
     
     <summary type="html">
     
-      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
+      &lt;p&gt;在Mac上安装Java，之前都是在官方网站下载安装包，这样当然不怎么方便，所以自然就想到用homebrew安装了。查了一下，果然有办法，而且可以保持几个不同版本的JDK，方便不同版本测试。&lt;/p&gt;
+&lt;p&gt;这个方法就是使用jenv，这个东西是基于rbenv开发的，不同的是rbenv是为了管理ruby，jenv是为了管理java。用jenv之后，就不用设置什么$JAVE_HOME变量了。而且可以方便切换各种不同版本的JDK，方便调试。&lt;/p&gt;
     
     </summary>
     
@@ -36,62 +71,30 @@
   </entry>
   
   <entry>
-    <title>the-ultimate-vimrc</title>
+    <title>终极 vimrc</title>
     <link href="http://spikezz.com/2017/04/18/the-ultimate-vimrc/"/>
     <id>http://spikezz.com/2017/04/18/the-ultimate-vimrc/</id>
     <published>2017-04-18T05:17:04.000Z</published>
-    <updated>2017-04-18T05:17:04.000Z</updated>
+    <updated>2017-05-03T02:26:57.000Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a>
+    <content type="html"><![CDATA[<p>使用vim需要配置自己的vimrc，用一个基本的vimrc，然后在这个基础之上学习各种添加方式也是学习的必经步骤。各种插件的安装使用，然后用各种插件管理器，比如Vundle或者pathogen，各种折腾vim也是乐趣之一。</p>
+<p>不过如果一开始就用上一个大牛配置好的vimrc，然后学习他的使用方法，尽快熟悉vim的各种牛逼技能，也不能算是一个偷懒的方法。特别对于vim这种学习曲线比较陡峭的神器来说。学习Emacs我觉得也可以用同一种方法，用人家配置好的方便的配置文件，即能迅速入门，又能体会神器之神，何乐而不为。</p>
+<a id="more"></a>
+<p>github上找了一个号称<a href="https://github.com/amix/vimrc" target="_blank" rel="external">终极vimrc</a>的配置。看了一下适合高手也适合新手。里面有两个版本，一个基础配置，一个终极配置。只要在vimrc文件里面打开关闭即可，很方便。</p>
+<p>终极版本主要配置了以下几点：</p>
+<p>对Python文件的语法颜色搭配。<br>打开最近编辑过的文档。<br>目录结构Nerd tree。<br>免打扰模式。<br>几个比较好看的主题。<br>几个常用模式。<br>等等。</p>
+<p>这些就不多说了，感觉光插件就够研究好久的。慢慢玩吧。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
+      &lt;p&gt;使用vim需要配置自己的vimrc，用一个基本的vimrc，然后在这个基础之上学习各种添加方式也是学习的必经步骤。各种插件的安装使用，然后用各种插件管理器，比如Vundle或者pathogen，各种折腾vim也是乐趣之一。&lt;/p&gt;
+&lt;p&gt;不过如果一开始就用上一个大牛配置好的vimrc，然后学习他的使用方法，尽快熟悉vim的各种牛逼技能，也不能算是一个偷懒的方法。特别对于vim这种学习曲线比较陡峭的神器来说。学习Emacs我觉得也可以用同一种方法，用人家配置好的方便的配置文件，即能迅速入门，又能体会神器之神，何乐而不为。&lt;/p&gt;
     
     </summary>
     
     
-  </entry>
-  
-  <entry>
-    <title>install-opencms</title>
-    <link href="http://spikezz.com/2017/04/18/install-opencms/"/>
-    <id>http://spikezz.com/2017/04/18/install-opencms/</id>
-    <published>2017-04-18T05:16:06.000Z</published>
-    <updated>2017-04-18T05:16:06.000Z</updated>
-    
-    <content type="html"><![CDATA[<a id="more"></a>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>what-is-cms</title>
-    <link href="http://spikezz.com/2017/04/18/what-is-cms/"/>
-    <id>http://spikezz.com/2017/04/18/what-is-cms/</id>
-    <published>2017-04-18T01:24:46.000Z</published>
-    <updated>2017-04-18T01:24:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<a id="more"></a>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-    
-    </summary>
-    
+      <category term="vim" scheme="http://spikezz.com/tags/vim/"/>
     
   </entry>
   
@@ -223,7 +226,7 @@
     <link href="http://spikezz.com/2017/04/10/about-reviews/"/>
     <id>http://spikezz.com/2017/04/10/about-reviews/</id>
     <published>2017-04-10T02:00:06.000Z</published>
-    <updated>2017-04-15T06:54:42.000Z</updated>
+    <updated>2017-05-03T00:46:20.000Z</updated>
     
     <content type="html"><![CDATA[<p>最近国内的<strong>多说</strong>挂了，官网说是业务转移，姑且信吧，不靠谱的又不止这一家。</p>
 <p>转移到<strong>disqus</strong>的话，试过，貌似不好加载，即使翻墙也不大容易，主题可能有些问题。但是又找不到其他比较简单够用的主题，索性就不用评论系统了。其实也没几个评论的，显得多余。</p>
@@ -233,7 +236,7 @@
 <p>不过文章我还是会更新的，发现之前写的有些文字还是问题多多，通顺的基础上还有很多纰漏，或者要添加修改的，反正持续更新吧。</p>
 <p>还有写这个博客我感觉还是用hexo系统命令好，很多需要折腾的问题还是要折腾的，用自动构建开始是挺爽，但是也是在你已经开发修改完整个基础框架之后。所以就固定在mba上写吧，用hexo系统命令写作，功能组件手动更新也能学到更多的东西。</p>
 <p>话说博客系统也是个大坑，很多可以使用的系统不谈，还有更多可以折腾的东西可以用到模板上。使用现有的模板真的还是有很多问题，拓展起来比较麻烦。学习前端各种知识还是挺有必要的。</p>
-<p>这里推荐几个博客，样式简单，但是很有内涵。比如<a href="1">Dave Ceddia</a>的个人博客，有教你如何开发React，有兴趣的可以看看，非常适合入门。还有<a href="https://flinhong.com/blog/" target="_blank" rel="external">flinhong</a>，以及<a href="https://imququ.com/" target="_blank" rel="external">Jerry Qu</a>的博客，用到的技术貌似都比较复杂，很多没听过的东西，做起来估计不易，不过喜欢折腾的，又想要独特博客风格的可以一试。</p>
+<p>这里推荐几个博客，样式简单，但是很有内涵。比如<a href="https://daveceddia.com/" target="_blank" rel="external">Dave Ceddia</a>的个人博客，有教你如何开发React，有兴趣的可以看看，非常适合入门。还有<a href="https://flinhong.com/blog/" target="_blank" rel="external">flinhong</a>，以及<a href="https://imququ.com/" target="_blank" rel="external">Jerry Qu</a>的博客，用到的技术貌似都比较复杂，很多没听过的东西，做起来估计不易，不过喜欢折腾的，又想要独特博客风格的可以一试。</p>
 ]]></content>
     
     <summary type="html">
