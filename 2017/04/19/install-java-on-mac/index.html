@@ -1,25 +1,25 @@
 <!DOCTYPE html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Mac OSX上安装 Java · SPIKE</title><meta name="description" content="Mac OSX上安装 Java - Spike Joe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://spikezz.com/atom.xml" title="SPIKE"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/zpike" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="https://twitter.com/zshe404" target="_blank" class="nav-list-link">TWITTER</a></li><li class="nav-list-item"><a href="/about" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Mac OSX上安装 Java</h1><div class="post-info">Apr 19, 2017</div><div class="post-content"><p>在Mac上安装Java，之前都是在官方网站下载安装包，这样当然不怎么方便，所以自然就想到用homebrew安装了。查了一下，果然有办法，而且可以保持几个不同版本的JDK，方便不同版本测试。</p>
 <p>这个方法就是使用jenv，这个东西是基于rbenv开发的，不同的是rbenv是为了管理ruby，jenv是为了管理java。用jenv之后，就不用设置什么$JAVE_HOME变量了。而且可以方便切换各种不同版本的JDK，方便调试。</p>
 <a id="more"></a>
-<h3 id="主要步骤："><a href="#主要步骤：" class="headerlink" title="主要步骤："></a>主要步骤：</h3><ol>
+<h3 id="主要步骤："><a href="#主要步骤：" class="headerlink" title="主要步骤："></a>主要步骤：</h3><ul>
 <li>安装 <code>brew-cask</code></li>
-</ol>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">brew update</div><div class="line">brew install caskroom/cask/brew-cask</div></pre></td></tr></table></figure>
-<ol>
+<ul>
 <li>安装 <code>jenv</code></li>
-</ol>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">brew install jenv</div><div class="line">echo &apos;export PATH=&quot;$HOME/.jenv/bin:$PATH&quot;&apos; &gt;&gt; ~/.zshrc</div><div class="line">echo &apos;eval &quot;$(jenv init -)&quot;&apos; &gt;&gt; ~/.zshrc</div></pre></td></tr></table></figure>
-<ol>
+<ul>
 <li>安装最新版本的<code>Java</code></li>
-</ol>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew cask install java</div></pre></td></tr></table></figure>
-<ol>
+<ul>
 <li>然后看看brew把Java安装到哪里去了，一般在如下位置</li>
-</ol>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/</div></pre></td></tr></table></figure>
-<ol>
+<ul>
 <li>然后在$HOME目录下加一个<code>.java-version</code>文件，里面写个<code>1.8</code>，结束。</li>
-</ol>
+</ul>
 <p>下面具体谈谈具体细节。</p>
 <p>首先Jenv是用来干啥的？</p>
 <p>主要是用来管理不同版本的Java的，什么Oracle JDK，OpenJDK等。可以去<a href="http://www.jenv.be" target="_blank" rel="external">官网</a>看看。</p>
