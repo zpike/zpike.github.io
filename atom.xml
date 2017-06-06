@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://spikezz.com/"/>
-  <updated>2017-06-06T01:44:03.000Z</updated>
+  <updated>2017-06-06T01:48:59.000Z</updated>
   <id>http://spikezz.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://spikezz.com/2017/06/02/git-checkout-usage/"/>
     <id>http://spikezz.com/2017/06/02/git-checkout-usage/</id>
     <published>2017-06-02T07:33:08.000Z</published>
-    <updated>2017-06-06T01:44:03.000Z</updated>
+    <updated>2017-06-06T01:48:59.000Z</updated>
     
     <content type="html"><![CDATA[<p>Git命令中，我个人感觉最重要的命令就是<code>git checkout</code>了。这个命令简单来说是Git的精髓–分支管理。当然对新手来说也是比较难以理解的概念之一。记得刚开始用git的时候，<code>git checkout</code>这个命令还是蛮令我困惑的。困惑之一就是远程分支和本地分支的管理上。比如怎么把远程不同于<code>master</code>分支的东西弄到本地，怎么在不同分支之间切换自如，利用分支的优势为自己开发所用等。</p>
 <a id="more"></a>
@@ -36,7 +36,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git fetch origin &lt;远程分支名&gt;:&lt;本地分支名&gt;</div><div class="line">git checkout &lt;本地分支名&gt;</div></pre></td></tr></table></figure>
 <p>远程操作上可能会出现很多问题，比如什么merge conflict之类，新手可以打开gitk看看，还有tower神器。不过感觉还是要先了解命令行，才能更好的用这些图形化界面。有点鸡生蛋，蛋生鸡的味道。</p>
 <p>参考链接：</p>
-<p>[1]阮一峰博客(<a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2014/06/git_remote.html</a>)<br>[2]Man Page(<a href="https://git-scm.com/docs/git-checkout" target="_blank" rel="external">https://git-scm.com/docs/git-checkout</a>)</p>
+<ul>
+<li><a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html" target="_blank" rel="external">阮一峰博客</a></li>
+<li><a href="https://git-scm.com/docs/git-checkout" target="_blank" rel="external">Man Page</a></li>
+</ul>
 ]]></content>
     
     <summary type="html">
