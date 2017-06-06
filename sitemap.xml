@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://spikezz.com/2017/06/02/git-checkout-usage/</loc>
+    
+    <lastmod>2017-06-06T01:44:03.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://spikezz.com/2017/05/26/gitignore-usage/</loc>
     
     <lastmod>2017-05-26T07:10:13.000Z</lastmod>
@@ -107,14 +114,14 @@
   </url>
   
   <url>
-    <loc>http://spikezz.com/2015/08/14/Rouge/</loc>
+    <loc>http://spikezz.com/2015/08/12/Blanc/</loc>
     
     <lastmod>2017-03-10T02:05:36.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://spikezz.com/2015/08/12/Blanc/</loc>
+    <loc>http://spikezz.com/2015/08/14/Rouge/</loc>
     
     <lastmod>2017-03-10T02:05:36.000Z</lastmod>
     
