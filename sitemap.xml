@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://spikezz.com/2017/07/15/auto-dev-with-grunt/</loc>
+    
+    <lastmod>2017-07-15T04:51:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://spikezz.com/2017/06/07/what-is-npm/</loc>
+    
+    <lastmod>2017-07-15T04:42:03.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://spikezz.com/2017/04/18/the-ultimate-vimrc/</loc>
+    
+    <lastmod>2017-07-15T03:38:01.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://spikezz.com/2017/06/02/git-checkout-usage/</loc>
     
     <lastmod>2017-06-06T01:48:59.000Z</lastmod>
@@ -33,13 +54,6 @@
     <loc>http://spikezz.com/2017/04/19/install-java-on-mac/</loc>
     
     <lastmod>2017-05-03T02:41:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://spikezz.com/2017/04/18/the-ultimate-vimrc/</loc>
-    
-    <lastmod>2017-05-03T02:26:57.000Z</lastmod>
     
   </url>
   
@@ -114,13 +128,6 @@
   </url>
   
   <url>
-    <loc>http://spikezz.com/2015/08/12/Blanc/</loc>
-    
-    <lastmod>2017-03-10T02:05:36.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://spikezz.com/2015/08/14/Rouge/</loc>
     
     <lastmod>2017-03-10T02:05:36.000Z</lastmod>
@@ -128,7 +135,7 @@
   </url>
   
   <url>
-    <loc>http://spikezz.com/2016/02/19/mcu-powerup/</loc>
+    <loc>http://spikezz.com/2015/08/12/Blanc/</loc>
     
     <lastmod>2017-03-10T02:05:36.000Z</lastmod>
     
@@ -136,6 +143,13 @@
   
   <url>
     <loc>http://spikezz.com/2015/08/13/Bleu/</loc>
+    
+    <lastmod>2017-03-10T02:05:36.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://spikezz.com/2016/02/19/mcu-powerup/</loc>
     
     <lastmod>2017-03-10T02:05:36.000Z</lastmod>
     
