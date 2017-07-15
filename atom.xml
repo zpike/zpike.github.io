@@ -2555,7 +2555,7 @@ body .markdown-body
     <updated>2017-04-13T08:12:18.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/111351727.jpg" alt="mark"></p>
-<p>之前写过一个 <a href="http://spikezz.com/2016/07/07/how-to-create-a-hexo-blog">Hexo 博客的搭建方法</a>，搭建好之后我就没有怎么写博客了。一来是因为自己没什么好分享的（其实就是懒哈），二来是感觉静态技术博客这种形式已经落伍了，如果要学某种技术，还是直接找视频教程比较快。</p>
+<p>之前写过一个 <a href="http://spikezz.com/2016/07/07/how-to-create-a-hexo-blog" target="_blank" rel="external">Hexo 博客的搭建方法</a>，搭建好之后我就没有怎么写博客了。一来是因为自己没什么好分享的（其实就是懒哈），二来是感觉静态技术博客这种形式已经落伍了，如果要学某种技术，还是直接找视频教程比较快。</p>
 <p>不过因为知道了“持续集成”，即 <code>Continuous integration</code>，这种技术已经很常见了，不过我最近才学习到。用在 hexo 博客的部署上比较合适，整个部署也比较简单，适合我这种小白。</p>
 <a id="more"></a>
 <p>之前部署 hexo 博客，只要在终端输入 <code>hexo g -d</code>即可，当然前提是你已经写好文章了呀，写不出文章的话我是帮不了的。而且已经搭建好博客环境，即 node.js 相关及 Hexo 本身。那换成 <code>Travis CI</code> 的持续集成服务到底有什么用呢？操作会不会更简单？答案是—–不会！</p>
@@ -2618,7 +2618,7 @@ body .markdown-body
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;http://oc1hnrd8p.bkt.clouddn.com/photos/20170227/111351727.jpg&quot; alt=&quot;mark&quot;&gt;&lt;/p&gt;
-&lt;p&gt;之前写过一个 &lt;a href=&quot;http://spikezz.com/2016/07/07/how-to-create-a-hexo-blog&quot;&gt;Hexo 博客的搭建方法&lt;/a&gt;，搭建好之后我就没有怎么写博客了。一来是因为自己没什么好分享的（其实就是懒哈），二来是感觉静态技术博客这种形式已经落伍了，如果要学某种技术，还是直接找视频教程比较快。&lt;/p&gt;
+&lt;p&gt;之前写过一个 &lt;a href=&quot;http://spikezz.com/2016/07/07/how-to-create-a-hexo-blog&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo 博客的搭建方法&lt;/a&gt;，搭建好之后我就没有怎么写博客了。一来是因为自己没什么好分享的（其实就是懒哈），二来是感觉静态技术博客这种形式已经落伍了，如果要学某种技术，还是直接找视频教程比较快。&lt;/p&gt;
 &lt;p&gt;不过因为知道了“持续集成”，即 &lt;code&gt;Continuous integration&lt;/code&gt;，这种技术已经很常见了，不过我最近才学习到。用在 hexo 博客的部署上比较合适，整个部署也比较简单，适合我这种小白。&lt;/p&gt;
     
     </summary>
