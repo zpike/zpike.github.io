@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>SPIKE</title>
+  <title>ZHOU</title>
   <subtitle>the only limit is your imagination</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://spikezz.com/"/>
+  <link href="http://zhzhou.me/"/>
   <updated>2017-07-15T04:51:50.000Z</updated>
-  <id>http://spikezz.com/</id>
+  <id>http://zhzhou.me/</id>
   
   <author>
     <name>Spike Joe</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title></title>
-    <link href="http://spikezz.com/2017/07/15/auto-dev-with-grunt/"/>
-    <id>http://spikezz.com/2017/07/15/auto-dev-with-grunt/</id>
+    <link href="http://zhzhou.me/2017/07/15/auto-dev-with-grunt/"/>
+    <id>http://zhzhou.me/2017/07/15/auto-dev-with-grunt/</id>
     <published>2017-07-15T04:51:50.000Z</published>
     <updated>2017-07-15T04:51:50.000Z</updated>
     
@@ -2069,10 +2069,10 @@ body .markdown-body
   
   <entry>
     <title>npm入门</title>
-    <link href="http://spikezz.com/2017/06/07/what-is-npm/"/>
-    <id>http://spikezz.com/2017/06/07/what-is-npm/</id>
-    <published>2017-06-07T01:57:35.000Z</published>
-    <updated>2017-07-15T04:42:03.000Z</updated>
+    <link href="http://zhzhou.me/2017/07/07/what-is-npm/"/>
+    <id>http://zhzhou.me/2017/07/07/what-is-npm/</id>
+    <published>2017-07-07T01:57:35.000Z</published>
+    <updated>2017-07-15T05:00:07.000Z</updated>
     
     <content type="html"><![CDATA[<p>随着JavaScript的流行，相关工具的使用也变得非常重要。npm是出现的一个小公举，类似的工具还有Yarn，不过目前npm还是更加普及一点。稍微查了下他们的区别，说是Yarn更好一点，更多大牛更加推荐。不过很多项目用的还是npm管理，比如之前介绍的hexo的安装包。</p>
 <p>npm全称是node package manager，所以它本质上就是个包管理器。类似mac上的神器，brew。不过npm只是用来管理nodejs的。这样开发js应用的时候，就可以大量使用前端库，并且保持较好的版本控制。为什么说“较好”，版本控制是个坑。很多构建的问题，据说都可以归到npm的头上，使用Yarn貌似能解决这一问题。</p>
@@ -2104,14 +2104,14 @@ body .markdown-body
     </summary>
     
     
-      <category term="npm js" scheme="http://spikezz.com/tags/npm-js/"/>
+      <category term="npm js" scheme="http://zhzhou.me/tags/npm-js/"/>
     
   </entry>
   
   <entry>
     <title>git checkout 的使用</title>
-    <link href="http://spikezz.com/2017/06/02/git-checkout-usage/"/>
-    <id>http://spikezz.com/2017/06/02/git-checkout-usage/</id>
+    <link href="http://zhzhou.me/2017/06/02/git-checkout-usage/"/>
+    <id>http://zhzhou.me/2017/06/02/git-checkout-usage/</id>
     <published>2017-06-02T07:33:08.000Z</published>
     <updated>2017-06-06T01:48:59.000Z</updated>
     
@@ -2142,14 +2142,14 @@ body .markdown-body
     </summary>
     
     
-      <category term="git" scheme="http://spikezz.com/tags/git/"/>
+      <category term="git" scheme="http://zhzhou.me/tags/git/"/>
     
   </entry>
   
   <entry>
     <title>.gitignore文件的使用</title>
-    <link href="http://spikezz.com/2017/05/26/gitignore-usage/"/>
-    <id>http://spikezz.com/2017/05/26/gitignore-usage/</id>
+    <link href="http://zhzhou.me/2017/05/26/gitignore-usage/"/>
+    <id>http://zhzhou.me/2017/05/26/gitignore-usage/</id>
     <published>2017-05-26T06:33:31.000Z</published>
     <updated>2017-05-26T07:10:13.000Z</updated>
     
@@ -2175,14 +2175,14 @@ body .markdown-body
     </summary>
     
     
-      <category term="git" scheme="http://spikezz.com/tags/git/"/>
+      <category term="git" scheme="http://zhzhou.me/tags/git/"/>
     
   </entry>
   
   <entry>
     <title>Mac OSX上安装 Java</title>
-    <link href="http://spikezz.com/2017/04/19/install-java-on-mac/"/>
-    <id>http://spikezz.com/2017/04/19/install-java-on-mac/</id>
+    <link href="http://zhzhou.me/2017/04/19/install-java-on-mac/"/>
+    <id>http://zhzhou.me/2017/04/19/install-java-on-mac/</id>
     <published>2017-04-19T00:17:38.000Z</published>
     <updated>2017-05-03T02:41:10.000Z</updated>
     
@@ -2236,8 +2236,8 @@ body .markdown-body
   
   <entry>
     <title>终极 vimrc</title>
-    <link href="http://spikezz.com/2017/04/18/the-ultimate-vimrc/"/>
-    <id>http://spikezz.com/2017/04/18/the-ultimate-vimrc/</id>
+    <link href="http://zhzhou.me/2017/04/18/the-ultimate-vimrc/"/>
+    <id>http://zhzhou.me/2017/04/18/the-ultimate-vimrc/</id>
     <published>2017-04-18T05:17:04.000Z</published>
     <updated>2017-07-15T03:38:01.000Z</updated>
     
@@ -2258,14 +2258,14 @@ body .markdown-body
     </summary>
     
     
-      <category term="vim" scheme="http://spikezz.com/tags/vim/"/>
+      <category term="vim" scheme="http://zhzhou.me/tags/vim/"/>
     
   </entry>
   
   <entry>
     <title>在 MAMP 中安装 Tomcat</title>
-    <link href="http://spikezz.com/2017/04/15/install-tomcat-in-mamp/"/>
-    <id>http://spikezz.com/2017/04/15/install-tomcat-in-mamp/</id>
+    <link href="http://zhzhou.me/2017/04/15/install-tomcat-in-mamp/"/>
+    <id>http://zhzhou.me/2017/04/15/install-tomcat-in-mamp/</id>
     <published>2017-04-15T05:29:17.000Z</published>
     <updated>2017-04-22T02:38:02.000Z</updated>
     
@@ -2304,8 +2304,8 @@ body .markdown-body
   
   <entry>
     <title>MAMP 使用</title>
-    <link href="http://spikezz.com/2017/04/15/MAMP-basics/"/>
-    <id>http://spikezz.com/2017/04/15/MAMP-basics/</id>
+    <link href="http://zhzhou.me/2017/04/15/MAMP-basics/"/>
+    <id>http://zhzhou.me/2017/04/15/MAMP-basics/</id>
     <published>2017-04-15T05:28:48.000Z</published>
     <updated>2017-04-17T07:05:54.000Z</updated>
     
@@ -2339,8 +2339,8 @@ body .markdown-body
   
   <entry>
     <title>Kindle 更换字体</title>
-    <link href="http://spikezz.com/2017/04/10/change-kindle-fonts/"/>
-    <id>http://spikezz.com/2017/04/10/change-kindle-fonts/</id>
+    <link href="http://zhzhou.me/2017/04/10/change-kindle-fonts/"/>
+    <id>http://zhzhou.me/2017/04/10/change-kindle-fonts/</id>
     <published>2017-04-10T02:25:09.000Z</published>
     <updated>2017-04-19T05:19:03.000Z</updated>
     
@@ -2381,14 +2381,14 @@ body .markdown-body
     </summary>
     
     
-      <category term="Kindle" scheme="http://spikezz.com/tags/Kindle/"/>
+      <category term="Kindle" scheme="http://zhzhou.me/tags/Kindle/"/>
     
   </entry>
   
   <entry>
     <title>关于多说评论</title>
-    <link href="http://spikezz.com/2017/04/10/about-reviews/"/>
-    <id>http://spikezz.com/2017/04/10/about-reviews/</id>
+    <link href="http://zhzhou.me/2017/04/10/about-reviews/"/>
+    <id>http://zhzhou.me/2017/04/10/about-reviews/</id>
     <published>2017-04-10T02:00:06.000Z</published>
     <updated>2017-05-04T00:28:18.000Z</updated>
     
@@ -2417,8 +2417,8 @@ body .markdown-body
   
   <entry>
     <title>基于 Rasperry Pi 3 的家用 NAS 搭建</title>
-    <link href="http://spikezz.com/2017/03/08/nas-based-on-pi/"/>
-    <id>http://spikezz.com/2017/03/08/nas-based-on-pi/</id>
+    <link href="http://zhzhou.me/2017/03/08/nas-based-on-pi/"/>
+    <id>http://zhzhou.me/2017/03/08/nas-based-on-pi/</id>
     <published>2017-03-07T16:00:00.000Z</published>
     <updated>2017-03-10T02:10:20.000Z</updated>
     
@@ -2458,14 +2458,14 @@ body .markdown-body
     </summary>
     
     
-      <category term="nas" scheme="http://spikezz.com/tags/nas/"/>
+      <category term="nas" scheme="http://zhzhou.me/tags/nas/"/>
     
   </entry>
   
   <entry>
     <title>遗传算法入门</title>
-    <link href="http://spikezz.com/2017/03/05/genetic-algorithm/"/>
-    <id>http://spikezz.com/2017/03/05/genetic-algorithm/</id>
+    <link href="http://zhzhou.me/2017/03/05/genetic-algorithm/"/>
+    <id>http://zhzhou.me/2017/03/05/genetic-algorithm/</id>
     <published>2017-03-04T16:00:00.000Z</published>
     <updated>2017-03-21T02:33:26.000Z</updated>
     
@@ -2543,14 +2543,14 @@ body .markdown-body
     </summary>
     
     
-      <category term="algorithm" scheme="http://spikezz.com/tags/algorithm/"/>
+      <category term="algorithm" scheme="http://zhzhou.me/tags/algorithm/"/>
     
   </entry>
   
   <entry>
     <title>使用 Travis-CI 来自动化部署 Hexo</title>
-    <link href="http://spikezz.com/2017/02/20/auto-deploy-hexo-on-travis-ci/"/>
-    <id>http://spikezz.com/2017/02/20/auto-deploy-hexo-on-travis-ci/</id>
+    <link href="http://zhzhou.me/2017/02/20/auto-deploy-hexo-on-travis-ci/"/>
+    <id>http://zhzhou.me/2017/02/20/auto-deploy-hexo-on-travis-ci/</id>
     <published>2017-02-20T06:00:00.000Z</published>
     <updated>2017-04-13T08:12:18.000Z</updated>
     
@@ -2624,14 +2624,14 @@ body .markdown-body
     </summary>
     
     
-      <category term="hexo travis" scheme="http://spikezz.com/tags/hexo-travis/"/>
+      <category term="hexo travis" scheme="http://zhzhou.me/tags/hexo-travis/"/>
     
   </entry>
   
   <entry>
     <title>Chrome 插件推荐</title>
-    <link href="http://spikezz.com/2016/08/12/chrome-extensions-recommend/"/>
-    <id>http://spikezz.com/2016/08/12/chrome-extensions-recommend/</id>
+    <link href="http://zhzhou.me/2016/08/12/chrome-extensions-recommend/"/>
+    <id>http://zhzhou.me/2016/08/12/chrome-extensions-recommend/</id>
     <published>2016-08-12T06:00:05.000Z</published>
     <updated>2017-04-15T00:54:15.000Z</updated>
     
@@ -2680,14 +2680,14 @@ body .markdown-body
     </summary>
     
     
-      <category term="Chrome" scheme="http://spikezz.com/tags/Chrome/"/>
+      <category term="Chrome" scheme="http://zhzhou.me/tags/Chrome/"/>
     
   </entry>
   
   <entry>
     <title>Hexo 搭建笔记</title>
-    <link href="http://spikezz.com/2016/07/07/how-to-create-a-hexo-blog/"/>
-    <id>http://spikezz.com/2016/07/07/how-to-create-a-hexo-blog/</id>
+    <link href="http://zhzhou.me/2016/07/07/how-to-create-a-hexo-blog/"/>
+    <id>http://zhzhou.me/2016/07/07/how-to-create-a-hexo-blog/</id>
     <published>2016-07-07T08:07:16.000Z</published>
     <updated>2017-04-07T08:26:40.000Z</updated>
     
@@ -2741,14 +2741,14 @@ body .markdown-body
     </summary>
     
     
-      <category term="hexo" scheme="http://spikezz.com/tags/hexo/"/>
+      <category term="hexo" scheme="http://zhzhou.me/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>单片机上电启动流程及相关配置详解</title>
-    <link href="http://spikezz.com/2016/02/19/mcu-powerup/"/>
-    <id>http://spikezz.com/2016/02/19/mcu-powerup/</id>
+    <link href="http://zhzhou.me/2016/02/19/mcu-powerup/"/>
+    <id>http://zhzhou.me/2016/02/19/mcu-powerup/</id>
     <published>2016-02-18T16:00:00.000Z</published>
     <updated>2017-03-10T02:05:36.000Z</updated>
     
@@ -2863,14 +2863,14 @@ body .markdown-body
     </summary>
     
     
-      <category term="mcu" scheme="http://spikezz.com/tags/mcu/"/>
+      <category term="mcu" scheme="http://zhzhou.me/tags/mcu/"/>
     
   </entry>
   
   <entry>
     <title>红</title>
-    <link href="http://spikezz.com/2015/08/14/Rouge/"/>
-    <id>http://spikezz.com/2015/08/14/Rouge/</id>
+    <link href="http://zhzhou.me/2015/08/14/Rouge/"/>
+    <id>http://zhzhou.me/2015/08/14/Rouge/</id>
     <published>2015-08-14T06:00:05.000Z</published>
     <updated>2017-03-10T02:05:36.000Z</updated>
     
@@ -2898,14 +2898,14 @@ body .markdown-body
     </summary>
     
     
-      <category term="film" scheme="http://spikezz.com/tags/film/"/>
+      <category term="film" scheme="http://zhzhou.me/tags/film/"/>
     
   </entry>
   
   <entry>
     <title>蓝</title>
-    <link href="http://spikezz.com/2015/08/13/Bleu/"/>
-    <id>http://spikezz.com/2015/08/13/Bleu/</id>
+    <link href="http://zhzhou.me/2015/08/13/Bleu/"/>
+    <id>http://zhzhou.me/2015/08/13/Bleu/</id>
     <published>2015-08-13T06:00:05.000Z</published>
     <updated>2017-03-10T02:05:36.000Z</updated>
     
@@ -2941,14 +2941,14 @@ body .markdown-body
     </summary>
     
     
-      <category term="films" scheme="http://spikezz.com/tags/films/"/>
+      <category term="films" scheme="http://zhzhou.me/tags/films/"/>
     
   </entry>
   
   <entry>
     <title>白</title>
-    <link href="http://spikezz.com/2015/08/12/Blanc/"/>
-    <id>http://spikezz.com/2015/08/12/Blanc/</id>
+    <link href="http://zhzhou.me/2015/08/12/Blanc/"/>
+    <id>http://zhzhou.me/2015/08/12/Blanc/</id>
     <published>2015-08-12T06:00:05.000Z</published>
     <updated>2017-03-10T02:05:36.000Z</updated>
     
@@ -2979,14 +2979,14 @@ body .markdown-body
     </summary>
     
     
-      <category term="films" scheme="http://spikezz.com/tags/films/"/>
+      <category term="films" scheme="http://zhzhou.me/tags/films/"/>
     
   </entry>
   
   <entry>
     <title>静默之火</title>
-    <link href="http://spikezz.com/2015/08/10/silent-fire/"/>
-    <id>http://spikezz.com/2015/08/10/silent-fire/</id>
+    <link href="http://zhzhou.me/2015/08/10/silent-fire/"/>
+    <id>http://zhzhou.me/2015/08/10/silent-fire/</id>
     <published>2015-08-10T06:00:05.000Z</published>
     <updated>2017-04-10T01:57:55.000Z</updated>
     
@@ -3018,7 +3018,7 @@ body .markdown-body
     </summary>
     
     
-      <category term="music" scheme="http://spikezz.com/tags/music/"/>
+      <category term="music" scheme="http://zhzhou.me/tags/music/"/>
     
   </entry>
   
