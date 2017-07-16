@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhzhou.me/"/>
-  <updated>2017-07-15T05:00:07.000Z</updated>
+  <updated>2017-07-16T15:01:15.000Z</updated>
   <id>http://zhzhou.me/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>npm入门</title>
+    <title>npm 简介</title>
     <link href="http://zhzhou.me/2017/07/07/what-is-npm/"/>
     <id>http://zhzhou.me/2017/07/07/what-is-npm/</id>
     <published>2017-07-07T01:57:35.000Z</published>
-    <updated>2017-07-15T05:00:07.000Z</updated>
+    <updated>2017-07-16T15:01:15.000Z</updated>
     
     <content type="html"><![CDATA[<p>随着JavaScript的流行，相关工具的使用也变得非常重要。npm是出现的一个小公举，类似的工具还有Yarn，不过目前npm还是更加普及一点。稍微查了下他们的区别，说是Yarn更好一点，更多大牛更加推荐。不过很多项目用的还是npm管理，比如之前介绍的hexo的安装包。</p>
 <p>npm全称是node package manager，所以它本质上就是个包管理器。类似mac上的神器，brew。不过npm只是用来管理nodejs的。这样开发js应用的时候，就可以大量使用前端库，并且保持较好的版本控制。为什么说“较好”，版本控制是个坑。很多构建的问题，据说都可以归到npm的头上，使用Yarn貌似能解决这一问题。</p>
