@@ -16,13 +16,6 @@
   </url>
   
   <url>
-    <loc>http://zhzhou.me/2017/07/15/auto-dev-with-grunt/</loc>
-    
-    <lastmod>2017-07-15T04:51:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://zhzhou.me/2017/04/18/the-ultimate-vimrc/</loc>
     
     <lastmod>2017-07-15T03:38:01.000Z</lastmod>
@@ -142,14 +135,14 @@
   </url>
   
   <url>
-    <loc>http://zhzhou.me/2015/08/13/Bleu/</loc>
+    <loc>http://zhzhou.me/2015/08/14/Rouge/</loc>
     
     <lastmod>2017-03-10T02:05:36.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://zhzhou.me/2015/08/14/Rouge/</loc>
+    <loc>http://zhzhou.me/2015/08/13/Bleu/</loc>
     
     <lastmod>2017-03-10T02:05:36.000Z</lastmod>
     
