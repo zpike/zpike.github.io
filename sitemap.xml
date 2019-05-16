@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhzhou.me/2016/08/12/chrome-extensions-recommend/</loc>
+    
+    <lastmod>2019-05-16T03:33:40.389Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhzhou.me/2017/02/20/auto-deploy-hexo-on-travis-ci/</loc>
+    
+    <lastmod>2019-05-16T03:33:12.361Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhzhou.me/2017/07/07/what-is-npm/</loc>
     
     <lastmod>2017-07-16T15:01:15.000Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://zhzhou.me/about/index.html</loc>
     
     <lastmod>2017-07-15T04:57:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhzhou.me/2017/04/18/the-ultimate-vimrc/</loc>
-    
-    <lastmod>2017-07-15T03:38:01.000Z</lastmod>
     
   </url>
   
@@ -44,51 +51,9 @@
   </url>
   
   <url>
-    <loc>http://zhzhou.me/2017/04/15/install-tomcat-in-mamp/</loc>
-    
-    <lastmod>2017-04-22T02:38:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhzhou.me/2017/04/10/change-kindle-fonts/</loc>
-    
-    <lastmod>2017-04-19T05:19:03.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhzhou.me/2017/04/15/MAMP-basics/</loc>
-    
-    <lastmod>2017-04-17T07:05:54.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhzhou.me/2016/08/12/chrome-extensions-recommend/</loc>
-    
-    <lastmod>2017-04-15T00:54:15.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhzhou.me/2017/02/20/auto-deploy-hexo-on-travis-ci/</loc>
-    
-    <lastmod>2017-04-13T08:12:18.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://zhzhou.me/2016/07/07/how-to-create-a-hexo-blog/</loc>
     
     <lastmod>2017-04-07T08:26:40.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhzhou.me/2017/03/08/nas-based-on-pi/</loc>
-    
-    <lastmod>2017-03-10T02:10:20.000Z</lastmod>
     
   </url>
   
