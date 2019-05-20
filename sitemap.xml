@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhzhou.me/2016/07/07/how-to-create-a-hexo-blog/</loc>
+    
+    <lastmod>2019-05-20T00:49:28.651Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhzhou.me/2016/08/12/chrome-extensions-recommend/</loc>
     
     <lastmod>2019-05-16T03:33:40.389Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>http://zhzhou.me/2017/04/19/install-java-on-mac/</loc>
     
     <lastmod>2017-05-03T02:41:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhzhou.me/2016/07/07/how-to-create-a-hexo-blog/</loc>
-    
-    <lastmod>2017-04-07T08:26:40.000Z</lastmod>
     
   </url>
   
